@@ -20,6 +20,7 @@ Data: `atd.csv`. Viewer: `docs/` (GitHub Pages).
 | unit | Currency or measure of the amount | `drachmas` / `denarii` / `artabas` |
 | type | `money`, or the commodity paid | `money` / `wheat` / `barley` |
 | source | Standard publication reference of the document | `O.Lips. 123` |
+| source_url | The online edition (papyri: `https://papyri.info/ddbdp/<DDbDP id>`); the site links the source to it | `https://papyri.info/ddbdp/o.heid;;100` |
 | notes | Original text of the document and an English translation, then the credit line (see below) | |
 
 ## Conventions
@@ -52,6 +53,9 @@ Data: `atd.csv`. Viewer: `docs/` (GitHub Pages).
 Roman Egyptian texts: papyri.info, Trismegistos.
 
 ## Change log
+
+**2026-10-07 (source links)**
+- New column `source_url` (after `source`), filled for ATD-000001 - 000024; sources on the site link to the online edition.
 
 **2026-10-07 (first data)**
 - Added ATD-000001 - 000024 (24 payments): 22 tax receipts on ostraca from Thebes, O.Heid. 100-144 (2nd century AD; DDbDP/HGV via papyri.info). Pilot: formats still under review. Database: 24 payments.

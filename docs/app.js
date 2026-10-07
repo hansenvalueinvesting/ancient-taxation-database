@@ -2,9 +2,14 @@
 // Reads atd.csv from the repository (CSV_URL in config.js).
 
 const { CSV_URL } = window.ATD_CONFIG;
-const COLS = ['id', 'date', 'location', 'payer', 'collector', 'tax', 'amount', 'unit', 'type', 'source', 'notes'];
-// Table columns; notes (the long original text) is shown only on a payment's own page.
-const LIST_COLS = COLS.filter((c) => c !== 'notes');
+const COLS = ['id', 'date', 'location', 'payer', 'collector', 'tax', 'amount', 'unit', 'type', 'source', 'source_url', 'notes'];
+// Table columns; notes (the long original text) is shown only on a payment's own page; source_url links the source.
+const LIST_COLS = COLS.filter((c) => c !== 'notes' && c !== 'source_url');
+
+const fmtSource = (p) => (p.source_url
+  ? `<a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.source)}</a>`
+  : esc(p.source));
+const cellHtml = (p, c) => (c === 'source' ? fmtSource(p) : esc(p[c]).replace(/\n/g, '<br>'));
 
 const $ = (id) => document.getElementById(id);
 const state = { all: [], rows: [], sortKey: 'id', sortDir: 1, shown: [] };
@@ -205,7 +210,7 @@ function render() {
   state.shown = sortRows(filtered());
   $('payments').querySelector('tbody').innerHTML = state.shown.map((p) => `
     <tr><td><a href="payment.html?id=${encodeURIComponent(p.id)}">${esc(p.id)}</a></td>${
-      LIST_COLS.slice(1).map((c) => `<td>${esc(p[c])}</td>`).join('')}</tr>`).join('');
+      LIST_COLS.slice(1).map((c) => `<td>${cellHtml(p, c)}</td>`).join('')}</tr>`).join('');
 
   document.querySelectorAll('th[data-sort]').forEach((th) => {
     th.dataset.label ||= th.textContent;
@@ -241,8 +246,8 @@ async function loadPayment() {
     document.title = `${p.id} | Ancient Taxation Database`;
     $('payment-id').textContent = p.id;
     const label = (c) => c[0].toUpperCase() + c.slice(1);
-    $('payment').innerHTML = COLS.slice(1).map((c) => `<tr><th align="left">${label(c)}</th><td>${
-      esc(p[c]).replace(/\n/g, '<br>')}</td></tr>`).join('');
+    $('payment').innerHTML = COLS.slice(1).filter((c) => c !== 'source_url').map((c) =>
+      `<tr><th align="left">${label(c)}</th><td>${cellHtml(p, c)}</td></tr>`).join('');
     setStatus('');
   } catch (err) {
     setStatus(`Could not load data. ${err.message}`);

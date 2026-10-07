@@ -15,13 +15,14 @@ tax receipt broken into individual transactions, one row per payment. Starting w
 
 ## Architecture (Hansen, Oct 2026)
 - Data: `atd.csv` in the repo (no Supabase or other backend). Columns in this exact order:
-  id, date, location, payer, collector, tax, amount, unit, type, source, notes (tax and notes added by
-  Hansen, Oct 2026). Field docs + conventions in `README.md`.
+  id, date, location, payer, collector, tax, amount, unit, type, source, source_url, notes (tax and notes
+  added by Hansen, Oct 2026; source_url for Hansen's "make it so that the source is hyperlinked"). Field docs + conventions in `README.md`.
 - Viewer: `docs/` (GitHub Pages), same style as the ALD site (plain HTML + `docs/app.js`, no CSS).
   Reads `atd.csv` from the main branch (`CSV_URL` in `docs/config.js`). Catalogue tree under
   "All payments": location > century, earliest first, unknowns last; URL hash `#loc=Thebes&c=2`.
   Table sortable by every column (notes not in the table); filters: search, Location, Tax, Unit, Type,
-  from/to year; CSV download. `payment.html?id=ATD-000001` shows one payment incl. notes.
+  from/to year; CSV download. `payment.html?id=ATD-000001` shows one payment incl. notes. Source links to source_url
+  (papyri: `https://papyri.info/ddbdp/<DDbDP id>`, e.g. `o.heid;;100`).
 - Merge to main automatically when a task is finished (Hansen, Oct 2026).
 
 ## Data standards (Hansen's handoff)
