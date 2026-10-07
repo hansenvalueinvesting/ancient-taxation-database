@@ -47,7 +47,12 @@ tax receipt broken into individual transactions, one row per payment. Starting w
 
 ## Status
 - Oct 2026: repo created (atd.csv headers only, README, viewer). 0 rows.
-- Oct 2026: pilot of 25 Theban tax receipts (O.Heid. 100-144) prepared for Hansen's review (24 rows,
-  not yet in atd.csv); open questions sent to Hansen.
+- Oct 2026: pilot of 25 Theban tax receipts (O.Heid. 100-144): 24 rows ATD-000001 - 000024 in atd.csv
+  (Hansen wanted data on the site). O.Heid. 103, 114, 120 left out (no amount or tax preserved).
+  Open questions to Hansen (rows to be corrected on his answers): editor-restored amounts (109, 110, 136:
+  editor's figure used), receipts without amount (kept, amount/unit/type blank), date-range format
+  (`Feb-Apr 190 AD (?)`, `138-139 AD`), several taxes for one sum (one row, `dike tax; bath tax (χωματικόν;
+  βαλανευτικόν)`; separately itemised sums = separate rows), dirty drachmas (as `drachmas`), "X and
+  partners" collectors, in-kind fractions (1/12 artaba = 0.0833), O.Heid. 139 sum mismatch (text figure used).
 - Deferred (Hansen, Oct 2026): loading data on demand as the CSV grows (options discussed: per-node
   split files built by an Action; SQLite via sql.js-httpvfs). The site loads the whole atd.csv for now.

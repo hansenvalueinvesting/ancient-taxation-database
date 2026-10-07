@@ -1,1 +1,493 @@
 id,date,location,payer,collector,tax,amount,unit,type,source,notes
+ATD-000001,30 Apr 188 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis,price of dates (τιμὴ φοινίκων),10.5714,drachmas,money,O.Heid. 100,"Original Text:
+1 Παχὼν ε̅ τοῦ
+2 κη (ἔτους) ὀνόμ(ατος) Πεβρ(ίχιος)
+3 Πεβρίχ(ιος) Ἡρακλ(ήους) ὑπ(ὲρ)
+4 τιμ(ῆς) φοιν(ίκων) γενήμ(ατος) κη (ἔτους)
+5 (δραχμὰς) δέκα (τετρώβολον), (γίνονται) (δραχμαὶ) ι (τετρώβολον). Μ̣ι̣(ῦσις) σεσημ(είωμαι).
+
+English translation:
+1 Pachon 5 of the
+2 28th year, in the name of Pebrichis
+3 son of Pebrichis, grandson of Herakles, for
+4 the price of dates of the crop of the 28th year
+5 ten drachmas four obols, total 10 dr. 4 ob. I, Miysis(?), have signed.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000002,Feb-Apr 190 AD (?),Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 106,"Original Text:
+1 Μιῦσις καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τιμ(ῆς) οἴνου
+2 καὶ φοιν(ίκων) Πεβρίχι Πεβρίχ(ιος)
+3 Ἡρακλήο(υς). ἔσχ(ομεν) παρὰ σο(ῦ)
+4 ὑπ(ὲρ) τιμ(ῆς) φοιν(ίκων) γενή(ματος) κθ (ἔτους)
+5 (δραχμὰς) ἕνδεκα (διώβολον), (γίνονται) (δραχμαὶ) ια (διώβολον),
+6 ἃς καὶ διαγρά(ψομεν) ἐπὶ τὴν δημ(οσίαν) τράπ(εζαν).
+
+English translation:
+1 Miysis and partners, supervisors of the price of wine
+2 and dates, to Pebrichis son of Pebrichis,
+3 grandson of Herakles. We have received from you
+4 for the price of dates of the crop of the 29th year
+5 eleven drachmas two obols, total 11 dr. 2 ob.,
+6 which we shall also pay into the public bank.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000003,21 Aug 190 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Ammonios and partners,bath tax (βαλανευτικόν),,,,O.Heid. 107,"Original Text:
+1 Ἀ̣μ̣μ̣ώ̣ν̣ι̣ο̣ς̣ καὶ μ(έτοχοι) ἐπιτηρητ(αὶ) τέλους θησα(υροῦ)
+2 ἱε̣ρ̣ῶν τοῦ λ (ἔτους) Πεβρίχι ὁμ(οίως) Ἡρακ(λήους)
+3 χαί(ρειν). ἔσχ(ομεν) τὸ βα̣λ̣(ανευτικὸν) τοῦ λ (ἔτους) Αὐρηλίου
+4 Κομμόδου Ἀντωνίνου Καίσαρος
+5 τοῦ κυρίου, Μεσορὴ κη̣.
+
+English translation:
+1 Ammonios and partners, supervisors of the tax of the treasury
+2 of the temples of the 30th year, to Pebrichis son of Pebrichis, grandson of Herakles,
+3 greetings. We have received the bath tax of the 30th year of Aurelius
+4 Commodus Antoninus Caesar
+5 the lord, Mesore 28.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000004,4 Sep 190 AD,Thebes,Sen[...],,[...] and dates (φοίνικες),7,drachmas,money,O.Heid. 108,"Original Text:
+1 Θὼθ ζ τοῦ λα̣ (ἔτους) ὀνό(ματος) Σε̣ν̣..
+2 ....ο̣υ̣ Π....χ̣. Φα....ου καὶ μ(ετόχων)
+3 διὰ Πεβρίχιο(ς) ὁμ(οίως) Ἡρ̣α̣κ̣(λήους) ὑπ(ὲρ) π....δ̣
+4 α̣..π̣ καὶ φοιν(ίκων) κϛ (ἔτους) καὶ κζ (ἔτους) (δραχμὰς) ἑπτά,
+5 (γίνονται) (δραχμαὶ) ζ. Α.. σεση(μείωμαι).
+
+English translation:
+1 Thoth 7 of the 31st year, in the name of Sen..
+2 .... P....ch(?). Pha....ou and partners
+3 through Pebrichis son of Pebrichis, grandson of Herakles, for p....d(?)
+4 a..p(?) and dates of the 26th year and 27th year seven drachmas,
+5 total 7 dr. A.. I have signed.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000005,Feb-Apr 191 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 109,"Original Text:
+1 Μιῦσις καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τιμ(ῆς)
+2 ο̣ἴνου καὶ φοιν(ίκων) Πεβρίχ(ει) ὁμ(οίως)
+3 Ηρακλ(ήους). ἔσχ(ομεν) παρὰ σο(ῦ) ὑπ(ὲρ) τιμ(ῆς)
+4 [φοιν(ίκων) γενή(ματος)] λ (ἔτους) (δραχμὰς) ἕνδεκα
+5 [(διώβολον), (γίνονται) (δραχμαὶ) ια (διώβολον).] (ἔτους) λα //
+6 [...]
+
+English translation:
+1 Miysis and partners, supervisors of the price
+2 of wine and dates, to Pebrichis son of Pebrichis,
+3 grandson of Herakles. We have received from you for the price
+4 [of dates of the crop] of the 30th year eleven drachmas
+5 [two obols, total 11 dr. 2 ob.] Year 31 //
+6 [...]
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000006,25 Jul-23 Aug 191 AD (?),Thebes,Senkametis daughter of Abos,,land survey (γεωμετρία),1.2857,drachmas,money,O.Heid. 110,"Original Text:
+1 [Μεσο(ρὴ)]. τοῦ λα (ἔτους) ὀνό(ματος)
+2 [Σενκα]μήτιο(ς) Ἀβῶτος
+3 [ὑπ(ὲρ) γεωμ(ετρίας)] λα (ἔτους) Χά(ρακος) (δραχμὰς)
+4 [(γίνεται) (δραχμὴ) α] (διώβολον). Α...
+
+English translation:
+1 [Mesore] . of the 31st year, in the name of
+2 [Senka]metis daughter of Abos
+3 [for land survey] of the 31st year, of Charax, drachmas
+4 [total 1 dr.] 2 ob. A...
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000007,3 Apr 192 AD,Thebes,Tkroris daughter of Pebrichis,Pamonthes and partners,burial tax (τέλος ταφῆς),,,,O.Heid. 113,"Original Text:
+1 Παμών̣θ(ης) καὶ μ(έτοχοι) {καὶ μ(έτοχοι)} τ̣ε̣λ̣(ῶναι) θ̣η̣σ̣α̣(υροῦ) ἱ̣ε̣ρ̣ῶ̣(ν)
+2 Τκρώριο̣(ς) Πεβρίχιο(ς). ἔσχο̣μ̣(εν) παρὰ σο̣(ῦ)
+3 ὑπ(ὲρ) ταφῆς Λαβάιο(ς) ἀνδρὸ(ς) τὸ καθῆ̣κ(ον)
+4 τέλ(ος). (ἔτους) λβ Φαρμοῦθι η.
+5 Παμών̣θ(ης) σεσημ(είωμαι).
+
+English translation:
+1 Pamonthes and partners, tax farmers of the treasury of the temples,
+2 to Tkroris daughter of Pebrichis. We have received from you
+3 for the burial of Labais, (your) husband, the due
+4 tax. Year 32, Pharmouthi 8.
+5 I, Pamonthes, have signed.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000008,28 May 192 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 115,"Original Text:
+1 Μιῦσις καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τιμ(ῆς) οἴνου
+2 καὶ φοιν(ίκων) Πεβρίχ(ει) ὁμ(οίως)
+3 Ἡρακλ(ήους). ἔσχ(ομεν) παρὰ σο(ῦ) ὑπ(ὲρ)
+4 τιμ(ῆς) φοιν(ίκων) γ[ε]ν̣ή(ματος) λα (ἔτους)
+5 (δραχμὰς) ἕνδεκα (διώβολον), (γίνονται) (δραχμαὶ) ια (διώβολον).
+6 (ἔτους) λβ // Παῦ(νι) γ̣̅.
+
+English translation:
+1 Miysis and partners, supervisors of the price of wine
+2 and dates, to Pebrichis son of Pebrichis,
+3 grandson of Herakles. We have received from you for
+4 the price of dates of the crop of the 31st year
+5 eleven drachmas two obols, total 11 dr. 2 ob.
+6 Year 32 // Pauni 3.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000009,1 May 193 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Titianos,supplement (πρόσθεσις),0.0833,artabas,wheat,O.Heid. 117,"Original Text:
+1 Παχὼ(ν) ϛ τοῦ α (ἔτους) εἰς
+2 πρόσθ(εσιν) ὀνό(ματος) Πεβρίχιο(ς) ὁμ(οίως)
+3 Ἡρακ(λήους) ὑπ(ὲρ) λημ(μάτων) λβ (ἔτους) (πυροῦ ἀρτάβης) δωδέκ(ατον).
+4 Τιτιανὸ(ς) πράκ(τωρ) σεσημ(είωμαι). Π̣.. σεσημ(είωμαι).
+
+English translation:
+1 Pachon 6 of the 1st year, for
+2 the supplement, in the name of Pebrichis son of Pebrichis,
+3 grandson of Herakles, for the receipts of the 32nd year, one-twelfth of an artaba of wheat.
+4 I, Titianos, collector, have signed. I, P.., have signed.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000010,2 May-28 Aug 193 AD,Thebes,Tkroris daughter of Pebrichis,Pamonthes and partners,burial tax (τέλος ταφῆς),,,,O.Heid. 118,"Original Text:
+1 Παμών̣θ̣(ης) κ̣α̣ὶ μ(έτοχοι) τ̣ε̣λ̣(ῶναι)
+2 θησα(υροῦ) ἱερῶ(ν) Τκρῶρι Πε
+3 βρίχι(ος). ἔσχ̣ομ(εν) παρ̣α̣` σο̣(ῦ)
+4 ὑπ(ὲρ) ταφ̣ῆς Πεβρίχιο(ς)
+5 ἀδελ(φοῦ) τὸ καθῆκ(ον) τέλ(ος).
+6 (ἔτους) α̣
+7 ...
+
+English translation:
+1 Pamonthes and partners, tax farmers
+2 of the treasury of the temples, to Tkroris daughter of Pe-
+3 brichis. We have received from you
+4 for the burial of Pebrichis,
+5 (your) brother, the due tax.
+6 Year 1
+7 ...
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000011,17 Jun 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,"watchtowers, guards and others (σκόπελοι, φύλακες, ἄλλα)",7.2857,drachmas,money,O.Heid. 133,"Original Text:
+1 Ψανσνῶς καὶ Κασιανὸς
+2 πράκ(τορες) ἀργ(υρικῶν) Μεχφρήους Ὥρου
+3 Μεχφρήους. ἔσχ(ομεν) ὑπ(ὲρ) σκοπ(έλων) καὶ φυλ(άκων) καὶ
+4 ἄλ(λων) κα (ἔτους) δρα̣χ(μὰς) ἑπτὰ (διώβολον), (γίνονται) (δραχμαὶ) ζ (2 ὀβολοί).
+5 (ἔτους) κα Ἁδριανοῦ Καίσαρος τοῦ κυρίου
+6 Παῦ(νι) κγ.
+7 Κασιανὸς δι(ὰ) Λουκ(ᾶτος) υἱοῦ (δραχμὰς) ζ (2 ὀβολοί).
+
+English translation:
+1 Psansnos and Kasianos,
+2 collectors of money taxes, to Mechphres son of Horos,
+3 grandson of Mechphres. We have received for watchtowers and guards and
+4 other (taxes) of the 21st year seven drachmas two obols, total 7 dr. 2 ob.
+5 Year 21 of Hadrian Caesar the lord,
+6 Pauni 23.
+7 Kasianos, through Loukas (my) son: 7 dr. 2 ob.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000012,21 Jul 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,dike tax; bath tax (χωματικόν; βαλανευτικόν),2,drachmas,money,O.Heid. 134,"Original Text:
+1 Ψανσνῶς καὶ Κασιανὸς πράκ(τορες)
+2 ἀργυ(ρικῶν) Μεχφρης Ὥρου Μεχφρ(ήους).
+3 ἔσχ(ομεν) ὑπ(ὲρ) χω(ματικοῦ) καὶ βαλ(ανευτικοῦ) κα (ἔτους) ῥυπ(αρὰς) δρα̣χ̣(μὰς) δύο
+4 καὶ ὑπ(ὲρ) διπλῶν καὶ σκοπ(έλων) καὶ φυλ(άκων) κα (ἔτους)
+5 (δραχμὰς) πέντε (τετρώβολον), (γίνονται) (δραχμαὶ) ζ (τετρώβολον). (ἔτους) κ̣α̣
+6 Ἁδριανοῦ Καίσαρος τοῦ κυρίου
+7 Ἐπεὶφ κ̣ζ. Κασιανὸ(ς) δι(ὰ)
+8 Λουκ(ᾶτος) υἱοῦ (δραχμὰς) ζ (τετρώβολον).
+9 ἄλ(λας) Θὼθ κδ τοῦ κβ (ἔτους)
+10 [ὀν]ό(ματος) [τ]οῦ (αὐτοῦ) Μεχφρήο(υς) ἔσχ(ομεν)
+11 [ὑπ(ὲρ) ...] κα (ἔτους) δραχ(μὰς)
+12 [τέσσαρ]ε̣ς, (γίνονται) (δραχμαὶ) δ.
+13 [Κασιανὸς δι(ὰ) Λουκ(ᾶτος)] υἱ̣οῦ [(δραχμαὶ) δ]
+13 [...]
+
+English translation:
+1 Psansnos and Kasianos, collectors
+2 of money taxes, to Mechphres son of Horos, grandson of Mechphres.
+3 We have received for the dike tax and bath tax of the 21st year two dirty drachmas,
+4 and for the double (charges) and watchtowers and guards of the 21st year
+5 five drachmas four obols, total 7 dr. 4 ob. Year 21
+6 of Hadrian Caesar the lord,
+7 Epeiph 27. Kasianos, through
+8 Loukas (my) son: 7 dr. 4 ob.
+9 Further, Thoth 24 of the 22nd year,
+10 in the name of the same Mechphres, we have received
+11 [for ...] of the 21st year [four] drachmas,
+12 total 4 dr.
+13 [Kasianos, through Loukas (my)] son: [4 dr.]
+13 [...]
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000013,21 Jul 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,double charges; watchtowers; guards (διπλᾶ; σκόπελοι; φύλακες),5.5714,drachmas,money,O.Heid. 134,"Original Text:
+1 Ψανσνῶς καὶ Κασιανὸς πράκ(τορες)
+2 ἀργυ(ρικῶν) Μεχφρης Ὥρου Μεχφρ(ήους).
+3 ἔσχ(ομεν) ὑπ(ὲρ) χω(ματικοῦ) καὶ βαλ(ανευτικοῦ) κα (ἔτους) ῥυπ(αρὰς) δρα̣χ̣(μὰς) δύο
+4 καὶ ὑπ(ὲρ) διπλῶν καὶ σκοπ(έλων) καὶ φυλ(άκων) κα (ἔτους)
+5 (δραχμὰς) πέντε (τετρώβολον), (γίνονται) (δραχμαὶ) ζ (τετρώβολον). (ἔτους) κ̣α̣
+6 Ἁδριανοῦ Καίσαρος τοῦ κυρίου
+7 Ἐπεὶφ κ̣ζ. Κασιανὸ(ς) δι(ὰ)
+8 Λουκ(ᾶτος) υἱοῦ (δραχμὰς) ζ (τετρώβολον).
+9 ἄλ(λας) Θὼθ κδ τοῦ κβ (ἔτους)
+10 [ὀν]ό(ματος) [τ]οῦ (αὐτοῦ) Μεχφρήο(υς) ἔσχ(ομεν)
+11 [ὑπ(ὲρ) ...] κα (ἔτους) δραχ(μὰς)
+12 [τέσσαρ]ε̣ς, (γίνονται) (δραχμαὶ) δ.
+13 [Κασιανὸς δι(ὰ) Λουκ(ᾶτος)] υἱ̣οῦ [(δραχμαὶ) δ]
+13 [...]
+
+English translation:
+1 Psansnos and Kasianos, collectors
+2 of money taxes, to Mechphres son of Horos, grandson of Mechphres.
+3 We have received for the dike tax and bath tax of the 21st year two dirty drachmas,
+4 and for the double (charges) and watchtowers and guards of the 21st year
+5 five drachmas four obols, total 7 dr. 4 ob. Year 21
+6 of Hadrian Caesar the lord,
+7 Epeiph 27. Kasianos, through
+8 Loukas (my) son: 7 dr. 4 ob.
+9 Further, Thoth 24 of the 22nd year,
+10 in the name of the same Mechphres, we have received
+11 [for ...] of the 21st year [four] drachmas,
+12 total 4 dr.
+13 [Kasianos, through Loukas (my)] son: [4 dr.]
+13 [...]
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000014,21 Sep 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,,4,drachmas,money,O.Heid. 134,"Original Text:
+1 Ψανσνῶς καὶ Κασιανὸς πράκ(τορες)
+2 ἀργυ(ρικῶν) Μεχφρης Ὥρου Μεχφρ(ήους).
+3 ἔσχ(ομεν) ὑπ(ὲρ) χω(ματικοῦ) καὶ βαλ(ανευτικοῦ) κα (ἔτους) ῥυπ(αρὰς) δρα̣χ̣(μὰς) δύο
+4 καὶ ὑπ(ὲρ) διπλῶν καὶ σκοπ(έλων) καὶ φυλ(άκων) κα (ἔτους)
+5 (δραχμὰς) πέντε (τετρώβολον), (γίνονται) (δραχμαὶ) ζ (τετρώβολον). (ἔτους) κ̣α̣
+6 Ἁδριανοῦ Καίσαρος τοῦ κυρίου
+7 Ἐπεὶφ κ̣ζ. Κασιανὸ(ς) δι(ὰ)
+8 Λουκ(ᾶτος) υἱοῦ (δραχμὰς) ζ (τετρώβολον).
+9 ἄλ(λας) Θὼθ κδ τοῦ κβ (ἔτους)
+10 [ὀν]ό(ματος) [τ]οῦ (αὐτοῦ) Μεχφρήο(υς) ἔσχ(ομεν)
+11 [ὑπ(ὲρ) ...] κα (ἔτους) δραχ(μὰς)
+12 [τέσσαρ]ε̣ς, (γίνονται) (δραχμαὶ) δ.
+13 [Κασιανὸς δι(ὰ) Λουκ(ᾶτος)] υἱ̣οῦ [(δραχμαὶ) δ]
+13 [...]
+
+English translation:
+1 Psansnos and Kasianos, collectors
+2 of money taxes, to Mechphres son of Horos, grandson of Mechphres.
+3 We have received for the dike tax and bath tax of the 21st year two dirty drachmas,
+4 and for the double (charges) and watchtowers and guards of the 21st year
+5 five drachmas four obols, total 7 dr. 4 ob. Year 21
+6 of Hadrian Caesar the lord,
+7 Epeiph 27. Kasianos, through
+8 Loukas (my) son: 7 dr. 4 ob.
+9 Further, Thoth 24 of the 22nd year,
+10 in the name of the same Mechphres, we have received
+11 [for ...] of the 21st year [four] drachmas,
+12 total 4 dr.
+13 [Kasianos, through Loukas (my)] son: [4 dr.]
+13 [...]
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000015,24 Aug 137 AD,Thebes,Mechphres son of Horos,Pamonthes and partners,bath tax (βαλανευτικόν),,,,O.Heid. 135,"Original Text:
+1 Π̣α̣μ̣ώ̣ν̣θ̣ης καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τέλο(υς)
+2 θησ(αυροῦ) ἱ̣ερῶ(ν) Μεχφρης̣ ὁ̣μ(οίως) Ὥρου χα(ίρειν). ἔ̣σ̣χ̣(ομεν)
+3 τὸ β̣α̣λ̣(ανευτικὸν) [το]ῦ̣ κα̣ (ἔτους) Ἁ̣δ̣ρ̣ιανοῦ Καίσαρος
+4 τοῦ κ̣υρ̣ί̣ο̣υ̣ Μ̣ε̣σ̣ο̣(ρὴ) ἐπαγομ(ένων) α.
+5 -- παβ̣ο. υἱο.
+
+English translation:
+1 Pamonthes and partners, supervisors of the tax
+2 of the treasury of the temples, to Mechphres likewise (son) of Horos, greetings. We have received
+3 the bath tax of the 21st year of Hadrian Caesar
+4 the lord. Mesore, intercalary day 1.
+5 -- pabo. son.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000016,1 Apr 138 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,,7,drachmas,money,O.Heid. 136,"Original Text:
+1 Ψανσνῶς [καὶ Κασιανὸς πράκ(τορες)]
+2 ἀ̣ρ̣γ̣(υρικῶν) Με̣χ̣[φρηους Ὥρου]
+3 Μεχφρήο(υς). ἔσχ(ομεν) ὑ[π(ὲρ)] [...]
+4 κβ̣ (ἔτους) ῥ̣υ̣π̣(αρὰς) δραχ(μὰς) ἑ[πτὰ]
+5 (ἔτους) κβ Ἁδριανοῦ Κ[αίσαρος]
+6 τοῦ κυρίου Φ[αρμοῦ]
+7 θ̣ι ϛ. Κα̣σ̣ι̣α̣ν̣ὸ̣ς̣
+8 δι(ὰ) Λουκ̣(ᾶτος) υ̣ἱοῦ (δραχμὰς) .[...].
+
+English translation:
+1 Psansnos [and Kasianos, collectors]
+2 of money taxes, to Mech[phres son of Horos,]
+3 grandson of Mechphres. We have received for [...]
+4 of the 22nd year se[ven](?) dirty drachmas.
+5 Year 22 of Hadrian C[aesar]
+6 the lord, Ph[armou-]
+7 thi 6. Kasianos
+8 through Loukas (my) son: drachmas .[...].
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000017,29 Sep 138 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Paniskos and partners,levy (μερισμός),4,drachmas,money,O.Heid. 137,"Original Text:
+1 Π̣ανίσκ(ος) κ̣α̣ὶ̣ μ̣(έτοχοι) ἀπα̣ι̣τ̣(ηταὶ) [...] α̣ (ἔτους) ὀνόμ(ματος)
+2 Μεχφρης [Ὥρου] Μεχφρ̣ή̣ο̣υ̣ς̣ ἔσχ(ομεν) ὑ̣π̣(ὲρ) τ̣ο̣ῦ̣ [αὐτο]ῦ̣
+3 με̣ρ̣ι̣σμ̣(οῦ) ῥ̣υ̣π̣(αρὰς) δ̣ρ̣α̣χ̣(μὰς) τ̣έ̣σ̣σ̣α̣ρ̣α̣ς̣, (γίνονται) (δραχμαὶ) δ. (ἔτους) β
+4 Ἀντωνίνου Καίσαρος τοῦ κυρίου Φ̣α̣ῶ̣(φι) β̣.
+
+English translation:
+1 Paniskos and partners, collectors [...] of the 1st year, in the name of
+2 Mechphres [son of Horos], grandson of Mechphres. We have received for the same
+3 levy four dirty drachmas, total 4 dr. Year 2
+4 of Antoninus Caesar the lord, Phaophi 2.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000018,15 Feb 136 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,poll tax and [...] (λαογραφία),6,drachmas,money,O.Heid. 138,"Original Text:
+1 Ψαν̣[σνῶς καὶ Κασιανὸς πράκ(τορες) ἀργ(υρικῶν)]
+2 Μεχφ[ρης Ὥρου Μεχφρήους.]
+3 ἔσχ(ομεν) ὑπ(ὲρ) λ̣αο(γραφίας) καὶ [... (ἔτους) ῥυπ(αρὰς) δραχ(μὰς)]
+4 ἕξ, (γίνονται) ῥυπ(αραὶ) (δραχμαὶ) ϛ. (ἔτους) [...]
+5 Καίσαρος τοῦ κυρ[ίου]
+6 Μεχε̣ὶ̣ρ̣ κ̣.. Κασια[νὸς]
+7 δι(ὰ) Λουκ(ᾶτος) υἱοῦ (δραχμὰς) ϛ.
+
+English translation:
+1 Psan[snos and Kasianos, collectors of money taxes,]
+2 to Mechph[res son of Horos, grandson of Mechphres.]
+3 We have received for poll tax and [...] [of the ... year dirty drachmas]
+4 six, total 6 dirty dr. Year [...]
+5 Caesar the lord,
+6 Mecheir 2.. Kasia[nos]
+7 through Loukas (my) son: 6 dr.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000019,28 Oct 138 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Phansnos; Kasianos,"watchtowers and others (σκόπελοι, ἄλλα)",1.5714,drachmas,money,O.Heid. 139,"Original Text:
+1 Φανσνῶς καὶ Κασιανὸς πράκ(τορες) ἀργ(υρικῶν)
+2 Μεχφ[ρ]ης Ὥρου Μεχφρήους. ἔσχ(ομεν) ὑπ(ὲρ)
+3 σκ̣ο̣π(έλων) κ̣α̣ὶ̣ ἄ̣λ̣(λων) α (ἔτους) ῥυπ(αρὰν) (δραχμὴν) μίαν̣ (τετρώβολον), (γίνεται) (δραχμὴ) α (τετρώβολον). [(ἔτους) β]
+4 Ἀντωνίνου Καίσαρος τοῦ κυρίου
+5 Ἁθὺρ λ̣. Κασ̣ι̣α̣νὸ̣ς̣ δ̣ι̣(ὰ)
+6 Λουκ̣(ᾶτος) υἱοῦ (δραχμὴν) α (5 ὀβολοί).
+
+English translation:
+1 Phansnos and Kasianos, collectors of money taxes,
+2 to Mechphres son of Horos, grandson of Mechphres. We have received for
+3 watchtowers and others of the 1st year one dirty drachma four obols, total 1 dr. 4 ob. [Year 2]
+4 of Antoninus Caesar the lord,
+5 Hathyr 30. Kasianos, through
+6 Loukas (my) son: 1 dr. 5 ob.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000020,14 Feb 139 AD,Thebes,Mekphres son of Horos,Horos; Asklas,poll tax; bath tax (λαογραφία; βαλανευτικόν),4,drachmas,money,O.Heid. 140,"Original Text:
+1 Ὧρος καὶ Ἀσκ(λᾶς) πράκ(τορες) ἀργ(υρικῶν)
+2 Μεκφρης Ὥρου. ἔσχο(μεν) ὑπ(ὲρ) λα⟨ο⟩γ(ραφίας)
+3 καὶ βαλ(ανευτικοῦ) β (ἔτους) Ἀγ(ορῶν) β ῥυπ(αρὰς) δραχ(μὰς) τέσσαρα(ς),
+4 (γίνονται) (δραχμαὶ) δ. (ἔτους) β Ἀντωνίνου Καίσαρος
+5 τοῦ κυρίου Μεχεὶρ κ̅.
+6 Ἀσκ(λᾶς) σ̣ε̣σ̣η̣μ̣(είωμαι) (δραχμαὶ) δ.
+
+English translation:
+1 Horos and Asklas, collectors of money taxes,
+2 to Mekphres son of Horos. We have received for poll tax
+3 and bath tax of the 2nd year, (quarter of the) Agorai 2, four dirty drachmas,
+4 total 4 dr. Year 2 of Antoninus Caesar
+5 the lord, Mecheir 20.
+6 I, Asklas, have signed: 4 dr.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000021,10 Aug 139 AD,Thebes,Mekphris son of Horos son of Mekphris,Horos,dike tax; bath tax (χωματικόν; βαλανευτικόν),4,drachmas,money,O.Heid. 141,"Original Text:
+1 Ὧρος πράκ(τωρ) ἀργυ(ρικῶν) Ἀγ(ορῶν) β
+2 Μεκφρι̣ς ωρο υ μεκφ̣ρις.
+3 ἔσχομ(εν) ὑπ(ὲρ) χωμ(ατικοῦ) καὶ βαλ(ανευτικοῦ) β (ἔτους)
+4 ῥυπ(αρὰς) (δραχμὰς) δ. (ἔτους) β Ἀντωνίνου
+5 τοῦ κυρίου, Μεσορὴ ιζ.
+
+English translation:
+1 Horos, collector of money taxes, (quarter of the) Agorai 2,
+2 to Mekphris son of Horos, grandson of Mekphris.
+3 We have received for the dike tax and bath tax of the 2nd year
+4 4 dirty drachmas. Year 2 of Antoninus
+5 the lord, Mesore 17.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000022,138-139 AD,Thebes,Mekphres son of Horos son of Mekphres,Horos; Asklas,double charges (διπλᾶ),4,drachmas,money,O.Heid. 142,"Original Text:
+1 Ὧρος καὶ Ἀσκλᾶς πράκ(τορες) ἀργ(υρικῶν)
+2 Ἀγ(ορῶν) β Μεκφρης Ὥρου Μεκφρήο(υς).
+3 ἔσχομ(εν) ὑπ(ὲρ) διπλ(ῶν) β̣ (ἔτους?) (δραχμὰς?) δ̣, (γίνεται?) (δραχμαὶ) δ.
+4 (ἔτους) β Ἀντων̣ί̣ν̣ο̣υ̣ Κ̣α̣ί̣σ̣α̣ρ̣ο̣ς̣ τ̣ο̣ῦ̣ κυρίου
+5 --
+6 Ἀσκ(λᾶς) (δραχμαὶ) δ.
+
+English translation:
+1 Horos and Asklas, collectors of money taxes,
+2 (quarter of the) Agorai 2, to Mekphres son of Horos, grandson of Mekphres.
+3 We have received for the double (charges) of the 2nd year(?) 4 drachmas(?), total(?) 4 dr.
+4 Year 2 of Antoninus Caesar the lord
+5 --
+6 Asklas: 4 dr.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000023,31 Aug 139 AD,Thebes,Mekphres son of Horos son of Mekphres,Horos; Asklas,dike tax; bath tax (χωματικόν; βαλανευτικόν),3.5714,drachmas,money,O.Heid. 143,"Original Text:
+1 Ὧρος καὶ Ἀσκλᾶς πρ[άκ(τορες) ἀργ(υρικῶν)]
+2 Ἀγ(ορῶν) β̅ Μεκφρης Ὥρου Μεκφρή(ους). ἔσχο(μεν)
+3 ὑπ(ὲρ) χωμ(ατικοῦ) καὶ βαλ(ανευτικοῦ) β (ἔτους) ῥυπ(αρὰς) (δραχμὰς) γ̣ (τετρώβολον). (ἔτους) ⟦β⟧ γ
+4 Ἀντωνίνου Καίσαρος τοῦ κ[υρ]ίου Θὼθ β̅.
+5 Ἀσκ(λᾶς) (δραχμαὶ) γ (τετρώβολον).
+
+English translation:
+1 Horos and Asklas, col[lectors of money taxes,]
+2 (quarter of the) Agorai 2, to Mekphres son of Horos, grandson of Mekphres. We have received
+3 for the dike tax and bath tax of the 2nd year 3 dirty drachmas 4 obols. Year 3
+4 of Antoninus Caesar the l[or]d, Thoth 2.
+5 Asklas: 3 dr. 4 ob.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."
+ATD-000024,31 Aug 139 AD,Thebes,Mekchres son of Pete[...],Asklas; Horos,,0.5714,drachmas,money,O.Heid. 144,"Original Text:
+1 Ἀσκλᾶς καὶ Ὧρος
+2 πράκτορες ἀργυρι̣κ(ῶν) Μεκχρῇ
+3 Πετ̣ε̣. ἔσχομ(εν) ὑπ̣(ὲρ) ......( )
+4 β (ἔτους) ῥυπ(αρὸν) ⟦δ̣⟧ τετρ⟨ώ⟩β(ολον),
+5 (γίνεται) (τετρώβολον). (ἔτους) β Ἀντωνίνου
+6 Καίσαρος {Καίσα̣ρ̣ο̣ς̣}
+7 τοῦ κυρίου Θὼ̣θ̣ β̣.
+8 Ὧρο(ς) σεση(μείωμαι).
+
+English translation:
+1 Asklas and Horos,
+2 collectors of money taxes, to Mekchres
+3 son of Pete.. We have received for ......
+4 of the 2nd year a dirty tetrobol (four obols),
+5 total 4 ob. Year 2 of Antoninus
+6 Caesar
+7 the lord, Thoth 2.
+8 I, Horos, have signed.
+
+Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
+Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
+(github.com/papyri/idp.data), licensed CC BY 3.0."

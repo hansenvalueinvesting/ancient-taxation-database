@@ -53,6 +53,9 @@ Roman Egyptian texts: papyri.info, Trismegistos.
 
 ## Change log
 
+**2026-10-07 (first data)**
+- Added ATD-000001 - 000024 (24 payments): 22 tax receipts on ostraca from Thebes, O.Heid. 100-144 (2nd century AD; DDbDP/HGV via papyri.info). Pilot: formats still under review. Database: 24 payments.
+
 **2026-10-07 (schema)**
 - New columns `tax` (after `collector`) and `notes` (last). Names: as on the document, in its language's spelling.
 
