@@ -2,7 +2,7 @@
 // Reads atd.csv from the repository (CSV_URL in config.js).
 
 const { CSV_URL } = window.ATD_CONFIG;
-const COLS = ['id', 'date', 'location', 'tax', 'payer', 'collector', 'type', 'amount', 'unit', 'source', 'notes'];
+const COLS = ['id', 'date', 'location', 'tax', 'type', 'payer', 'collector', 'amount', 'unit', 'source', 'notes'];
 // Table columns; notes (the long original text) is shown only on a payment's own page.
 const LIST_COLS = COLS.filter((c) => c !== 'notes');
 
