@@ -1,1 +1,1 @@
-id,date,location,payer,collector,amount,unit,type,source
+id,date,location,payer,collector,tax,amount,unit,type,source,notes

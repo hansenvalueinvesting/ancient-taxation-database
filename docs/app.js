@@ -1,8 +1,10 @@
-// The Ancient Taxation Database — frontend for index.html (catalogue and payment lists).
+// The Ancient Taxation Database — frontend for index.html (catalogue and payment lists) and payment.html (one payment).
 // Reads atd.csv from the repository (CSV_URL in config.js).
 
 const { CSV_URL } = window.ATD_CONFIG;
-const COLS = ['id', 'date', 'location', 'payer', 'collector', 'amount', 'unit', 'type', 'source'];
+const COLS = ['id', 'date', 'location', 'payer', 'collector', 'tax', 'amount', 'unit', 'type', 'source', 'notes'];
+// Table columns; notes (the long original text) is shown only on a payment's own page.
+const LIST_COLS = COLS.filter((c) => c !== 'notes');
 
 const $ = (id) => document.getElementById(id);
 const state = { all: [], rows: [], sortKey: 'id', sortDir: 1, shown: [] };
@@ -40,19 +42,20 @@ async function fetchPayments() {
 
 // ---------- dates ----------
 
-// Date field → sortable year: '30 BC' → -30, '128 AD' / '8 Aug 128 AD' → 128; null if blank or not a date.
+// Date field → sortable year (a range sorts by its start): '30 BC' → -30, '128 AD' / '8 Aug 128 AD' → 128,
+// '138-139 AD' → 138, 'Feb-Apr 190 AD (?)' → 190, '30 BC-14 AD' → -30; null if blank or not a date.
 function yearOf(date) {
-  const m = String(date).match(/(\d+) (BC|AD)$/);
-  return m ? (m[2] === 'BC' ? -Number(m[1]) : Number(m[1])) : null;
+  const m = String(date).replace(/ \(\?\)$/, '').match(/(\d+)(?: (BC|AD))?(?:-.*?\d+)? (BC|AD)$/);
+  if (!m) return null;
+  return (m[2] || m[3]) === 'BC' ? -Number(m[1]) : Number(m[1]);
 }
 
-// Date field → sortable day number within its year order (year, then month, then day).
+// Date field → sortable value: year, then month, then day of the range's start.
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 function dateValue(p) {
   if (p.year == null) return NaN;
-  const m = p.date.match(/^(?:(\d+) )?(?:([A-Z][a-z]{2}) )?\d+ (?:BC|AD)$/);
-  const month = m && m[2] ? MONTHS.indexOf(m[2]) + 1 : 0, day = m && m[1] ? Number(m[1]) : 0;
-  return p.year * 10000 + month * 100 + day;
+  const m = p.date.match(/^(?:(\d+) )?([A-Z][a-z]{2})[ -]/);
+  return p.year * 10000 + (m ? (MONTHS.indexOf(m[2]) + 1) * 100 + Number(m[1] || 0) : 0);
 }
 
 // Year filter input → sortable number: '100 BC' → -100, '57 AD' / 'AD 57' / '57' → 57.
@@ -136,9 +139,10 @@ function showSelection() {
   if (!sel) { state.rows = []; return setStatus(state.all.length ? 'Choose a category above.' : 'No payments recorded yet.'); }
   $('sel-title').textContent = sel.title;
   state.rows = state.all.filter(sel.test);
-  ['f-location', 'f-unit', 'f-type'].forEach((id) => { $(id).length = 1; });
+  ['f-location', 'f-tax', 'f-unit', 'f-type'].forEach((id) => { $(id).length = 1; });
   ['f-search', 'f-from', 'f-to'].forEach((id) => { $(id).value = ''; });
   fillSelect('f-location', state.rows.map((p) => p.location));
+  fillSelect('f-tax', state.rows.map((p) => p.tax));
   fillSelect('f-unit', state.rows.map((p) => p.unit));
   fillSelect('f-type', state.rows.map((p) => p.type));
   setYearPlaceholders();
@@ -169,16 +173,17 @@ function fillSelect(id, values) {
 
 function filtered() {
   const s = $('f-search').value.trim().toLowerCase();
-  const loc = $('f-location').value, unit = $('f-unit').value, type = $('f-type').value;
+  const loc = $('f-location').value, tax = $('f-tax').value, unit = $('f-unit').value, type = $('f-type').value;
   const from = parseYear($('f-from').value), to = parseYear($('f-to').value);
 
   return state.rows.filter((p) => {
     if (loc && p.location !== loc) return false;
+    if (tax && p.tax !== tax) return false;
     if (unit && p.unit !== unit) return false;
     if (type && p.type !== type) return false;
     if (from != null && (p.year == null || p.year < from)) return false;
     if (to != null && (p.year == null || p.year > to)) return false;
-    if (s && !COLS.map((c) => p[c]).join(' ').toLowerCase().includes(s)) return false;
+    if (s && !LIST_COLS.map((c) => p[c]).join(' ').toLowerCase().includes(s)) return false;
     return true;
   });
 }
@@ -199,7 +204,8 @@ function sortRows(rows) {
 function render() {
   state.shown = sortRows(filtered());
   $('payments').querySelector('tbody').innerHTML = state.shown.map((p) => `
-    <tr>${COLS.map((c) => `<td>${esc(p[c])}</td>`).join('')}</tr>`).join('');
+    <tr><td><a href="payment.html?id=${encodeURIComponent(p.id)}">${esc(p.id)}</a></td>${
+      LIST_COLS.slice(1).map((c) => `<td>${esc(p[c])}</td>`).join('')}</tr>`).join('');
 
   document.querySelectorAll('th[data-sort]').forEach((th) => {
     th.dataset.label ||= th.textContent;
@@ -224,19 +230,42 @@ function downloadCsv() {
   URL.revokeObjectURL(a.href);
 }
 
+// ---------- payment page ----------
+
+async function loadPayment() {
+  const id = new URLSearchParams(location.search).get('id');
+  if (!id) return setStatus('No payment ID given.');
+  try {
+    const p = (await fetchPayments()).find((r) => r.id === id);
+    if (!p) return setStatus(`Payment ${id} not found.`);
+    document.title = `${p.id} | Ancient Taxation Database`;
+    $('payment-id').textContent = p.id;
+    const label = (c) => c[0].toUpperCase() + c.slice(1);
+    $('payment').innerHTML = COLS.slice(1).map((c) => `<tr><th align="left">${label(c)}</th><td>${
+      esc(p[c]).replace(/\n/g, '<br>')}</td></tr>`).join('');
+    setStatus('');
+  } catch (err) {
+    setStatus(`Could not load data. ${err.message}`);
+  }
+}
+
 // ---------- wiring ----------
 
-const FILTERS = ['f-search', 'f-location', 'f-unit', 'f-type', 'f-from', 'f-to'];
-FILTERS.forEach((id) => $(id).addEventListener('input', render));
-$('btn-reset').addEventListener('click', () => {
-  FILTERS.forEach((id) => { $(id).value = ''; });
-  render();
-});
-$('btn-csv').addEventListener('click', downloadCsv);
-window.addEventListener('hashchange', showSelection);
-document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
-  state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
-  state.sortKey = th.dataset.sort;
-  render();
-}));
-load();
+if ($('payment')) {
+  loadPayment();
+} else {
+  const FILTERS = ['f-search', 'f-location', 'f-tax', 'f-unit', 'f-type', 'f-from', 'f-to'];
+  FILTERS.forEach((id) => $(id).addEventListener('input', render));
+  $('btn-reset').addEventListener('click', () => {
+    FILTERS.forEach((id) => { $(id).value = ''; });
+    render();
+  });
+  $('btn-csv').addEventListener('click', downloadCsv);
+  window.addEventListener('hashchange', showSelection);
+  document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
+    state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
+    state.sortKey = th.dataset.sort;
+    render();
+  }));
+  load();
+}

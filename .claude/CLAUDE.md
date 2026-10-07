@@ -15,11 +15,14 @@ tax receipt broken into individual transactions, one row per payment. Starting w
 
 ## Architecture (Hansen, Oct 2026)
 - Data: `atd.csv` in the repo (no Supabase or other backend). Columns in this exact order:
-  id, date, location, payer, collector, amount, unit, type, source. Field docs + conventions in `README.md`.
+  id, date, location, payer, collector, tax, amount, unit, type, source, notes (tax and notes added by
+  Hansen, Oct 2026). Field docs + conventions in `README.md`.
 - Viewer: `docs/` (GitHub Pages), same style as the ALD site (plain HTML + `docs/app.js`, no CSS).
   Reads `atd.csv` from the main branch (`CSV_URL` in `docs/config.js`). Catalogue tree under
   "All payments": location > century, earliest first, unknowns last; URL hash `#loc=Thebes&c=2`.
-  Table sortable by every column; filters: search, Location, Unit, Type, from/to year; CSV download.
+  Table sortable by every column (notes not in the table); filters: search, Location, Tax, Unit, Type,
+  from/to year; CSV download. `payment.html?id=ATD-000001` shows one payment incl. notes.
+- Merge to main automatically when a task is finished (Hansen, Oct 2026).
 
 ## Data standards (Hansen's handoff)
 - id `ATD-` + 6 digits, sequential, never reused. One row per transaction; different currencies or
@@ -30,8 +33,21 @@ tax receipt broken into individual transactions, one row per payment. Starting w
 - In-kind keeps its own unit; never converted to money.
 - Dates in BC/AD: `128 AD`, `8 Aug 128 AD`, `30 BC`.
 - Unknown or lost = blank. Never guess.
+- Tax = a payment to the government (Hansen, Oct 2026: "we can work this definition a little more").
+- Names (Hansen, Oct 2026): "use whatever is on the original document": Greek documents keep Greek
+  spelling (Apollonios), Latin ones Latin, etc.
+- notes: same structure as the ALD (Original Text, English translation, credit line), see README.
+
+## Method (Roman Egypt)
+- Source: github.com/papyri/idp.data (CC BY 3.0). DDbDP texts are now at `DDbDP/<TM//1000>/<TM>.xml`
+  (named by TM number), HGV metadata at `HGV_meta_EpiDoc`. Candidates: HGV terms `Quittung` + `Steuer`,
+  dated 30 BC-AD 284: 976 texts (Thebes 239, Elephantine 89, Memnoneia 66, Soknopaiou Nesos 61, ...);
+  a wider net (titles with `Quittung`) gives ~1,540 incl. rent, rations, granary receipts.
+- Original text rendered from the EpiDoc by script (scratch folder; not in the repo).
 
 ## Status
 - Oct 2026: repo created (atd.csv headers only, README, viewer). 0 rows.
+- Oct 2026: pilot of 25 Theban tax receipts (O.Heid. 100-144) prepared for Hansen's review (24 rows,
+  not yet in atd.csv); open questions sent to Hansen.
 - Deferred (Hansen, Oct 2026): loading data on demand as the CSV grows (options discussed: per-node
   split files built by an Action; SQLite via sql.js-httpvfs). The site loads the whole atd.csv for now.
