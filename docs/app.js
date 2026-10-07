@@ -2,13 +2,22 @@
 // Reads atd.csv from the repository (CSV_URL in config.js).
 
 const { CSV_URL } = window.ATD_CONFIG;
-const COLS = ['id', 'date', 'location', 'payer', 'collector', 'tax', 'amount', 'unit', 'type', 'source', 'source_url', 'notes'];
-// Table columns; notes (the long original text) is shown only on a payment's own page; source_url links the source.
-const LIST_COLS = COLS.filter((c) => c !== 'notes' && c !== 'source_url');
+const COLS = ['id', 'date', 'location', 'payer', 'collector', 'tax', 'amount', 'unit', 'type', 'source', 'notes'];
+// Table columns; notes (the long original text) is shown only on a payment's own page.
+const LIST_COLS = COLS.filter((c) => c !== 'notes');
 
-const fmtSource = (p) => (p.source_url
-  ? `<a href="${esc(p.source_url)}" target="_blank" rel="noopener">${esc(p.source)}</a>`
-  : esc(p.source));
+// Source → its online edition. Papyri and ostraca: papyri.info, from the citation
+// ('O.Heid. 100' → o.heid;;100, 'P.Oxy. 3 506' → p.oxy;3;506, 'O.Petr. Mus. 553' → o.petr.mus;;553).
+function sourceUrl(src) {
+  const m = String(src).match(/^(.+?)\.? (?:(\d+) )?(\d+[a-z]?)$/);
+  if (!m) return null;
+  const series = m[1].toLowerCase().replace(/\.\s*/g, '.').replace(/\s+/g, '.');
+  return `https://papyri.info/ddbdp/${series};${m[2] || ''};${m[3]}`;
+}
+const fmtSource = (p) => {
+  const url = sourceUrl(p.source);
+  return url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(p.source)}</a>` : esc(p.source);
+};
 const cellHtml = (p, c) => (c === 'source' ? fmtSource(p) : esc(p[c]).replace(/\n/g, '<br>'));
 
 const $ = (id) => document.getElementById(id);
@@ -246,7 +255,7 @@ async function loadPayment() {
     document.title = `${p.id} | Ancient Taxation Database`;
     $('payment-id').textContent = p.id;
     const label = (c) => c[0].toUpperCase() + c.slice(1);
-    $('payment').innerHTML = COLS.slice(1).filter((c) => c !== 'source_url').map((c) =>
+    $('payment').innerHTML = COLS.slice(1).map((c) =>
       `<tr><th align="left">${label(c)}</th><td>${cellHtml(p, c)}</td></tr>`).join('');
     setStatus('');
   } catch (err) {

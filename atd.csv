@@ -1,5 +1,5 @@
-id,date,location,payer,collector,tax,amount,unit,type,source,source_url,notes
-ATD-000001,30 Apr 188 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis,price of dates (τιμὴ φοινίκων),10.5714,drachmas,money,O.Heid. 100,https://papyri.info/ddbdp/o.heid;;100,"Original Text:
+id,date,location,payer,collector,tax,amount,unit,type,source,notes
+ATD-000001,30 Apr 188 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis,price of dates (τιμὴ φοινίκων),10.5714,drachmas,money,O.Heid. 100,"Original Text:
 1 Παχὼν ε̅ τοῦ
 2 κη (ἔτους) ὀνόμ(ατος) Πεβρ(ίχιος)
 3 Πεβρίχ(ιος) Ἡρακλ(ήους) ὑπ(ὲρ)
@@ -16,7 +16,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000002,Feb-Apr 190 AD (?),Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 106,https://papyri.info/ddbdp/o.heid;;106,"Original Text:
+ATD-000002,Feb-Apr 190 AD (?),Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 106,"Original Text:
 1 Μιῦσις καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τιμ(ῆς) οἴνου
 2 καὶ φοιν(ίκων) Πεβρίχι Πεβρίχ(ιος)
 3 Ἡρακλήο(υς). ἔσχ(ομεν) παρὰ σο(ῦ)
@@ -35,7 +35,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000003,21 Aug 190 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Ammonios and partners,bath tax (βαλανευτικόν),,,,O.Heid. 107,https://papyri.info/ddbdp/o.heid;;107,"Original Text:
+ATD-000003,21 Aug 190 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Ammonios and partners,bath tax (βαλανευτικόν),,,,O.Heid. 107,"Original Text:
 1 Ἀ̣μ̣μ̣ώ̣ν̣ι̣ο̣ς̣ καὶ μ(έτοχοι) ἐπιτηρητ(αὶ) τέλους θησα(υροῦ)
 2 ἱε̣ρ̣ῶν τοῦ λ (ἔτους) Πεβρίχι ὁμ(οίως) Ἡρακ(λήους)
 3 χαί(ρειν). ἔσχ(ομεν) τὸ βα̣λ̣(ανευτικὸν) τοῦ λ (ἔτους) Αὐρηλίου
@@ -52,7 +52,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000004,4 Sep 190 AD,Thebes,Sen[...],,[...] and dates (φοίνικες),7,drachmas,money,O.Heid. 108,https://papyri.info/ddbdp/o.heid;;108,"Original Text:
+ATD-000004,4 Sep 190 AD,Thebes,Sen[...],,[...] and dates (φοίνικες),7,drachmas,money,O.Heid. 108,"Original Text:
 1 Θὼθ ζ τοῦ λα̣ (ἔτους) ὀνό(ματος) Σε̣ν̣..
 2 ....ο̣υ̣ Π....χ̣. Φα....ου καὶ μ(ετόχων)
 3 διὰ Πεβρίχιο(ς) ὁμ(οίως) Ἡρ̣α̣κ̣(λήους) ὑπ(ὲρ) π....δ̣
@@ -69,7 +69,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000005,Feb-Apr 191 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 109,https://papyri.info/ddbdp/o.heid;;109,"Original Text:
+ATD-000005,Feb-Apr 191 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 109,"Original Text:
 1 Μιῦσις καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τιμ(ῆς)
 2 ο̣ἴνου καὶ φοιν(ίκων) Πεβρίχ(ει) ὁμ(οίως)
 3 Ηρακλ(ήους). ἔσχ(ομεν) παρὰ σο(ῦ) ὑπ(ὲρ) τιμ(ῆς)
@@ -88,7 +88,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000006,25 Jul-23 Aug 191 AD (?),Thebes,Senkametis daughter of Abos,,land survey (γεωμετρία),1.2857,drachmas,money,O.Heid. 110,https://papyri.info/ddbdp/o.heid;;110,"Original Text:
+ATD-000006,25 Jul-23 Aug 191 AD (?),Thebes,Senkametis daughter of Abos,,land survey (γεωμετρία),1.2857,drachmas,money,O.Heid. 110,"Original Text:
 1 [Μεσο(ρὴ)]. τοῦ λα (ἔτους) ὀνό(ματος)
 2 [Σενκα]μήτιο(ς) Ἀβῶτος
 3 [ὑπ(ὲρ) γεωμ(ετρίας)] λα (ἔτους) Χά(ρακος) (δραχμὰς)
@@ -103,7 +103,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000007,3 Apr 192 AD,Thebes,Tkroris daughter of Pebrichis,Pamonthes and partners,burial tax (τέλος ταφῆς),,,,O.Heid. 113,https://papyri.info/ddbdp/o.heid;;113,"Original Text:
+ATD-000007,3 Apr 192 AD,Thebes,Tkroris daughter of Pebrichis,Pamonthes and partners,burial tax (τέλος ταφῆς),,,,O.Heid. 113,"Original Text:
 1 Παμών̣θ(ης) καὶ μ(έτοχοι) {καὶ μ(έτοχοι)} τ̣ε̣λ̣(ῶναι) θ̣η̣σ̣α̣(υροῦ) ἱ̣ε̣ρ̣ῶ̣(ν)
 2 Τκρώριο̣(ς) Πεβρίχιο(ς). ἔσχο̣μ̣(εν) παρὰ σο̣(ῦ)
 3 ὑπ(ὲρ) ταφῆς Λαβάιο(ς) ἀνδρὸ(ς) τὸ καθῆ̣κ(ον)
@@ -120,7 +120,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000008,28 May 192 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 115,https://papyri.info/ddbdp/o.heid;;115,"Original Text:
+ATD-000008,28 May 192 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Miysis and partners,price of dates (τιμὴ φοινίκων),11.2857,drachmas,money,O.Heid. 115,"Original Text:
 1 Μιῦσις καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τιμ(ῆς) οἴνου
 2 καὶ φοιν(ίκων) Πεβρίχ(ει) ὁμ(οίως)
 3 Ἡρακλ(ήους). ἔσχ(ομεν) παρὰ σο(ῦ) ὑπ(ὲρ)
@@ -139,7 +139,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000009,1 May 193 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Titianos,supplement (πρόσθεσις),0.0833,artabas,wheat,O.Heid. 117,https://papyri.info/ddbdp/o.heid;;117,"Original Text:
+ATD-000009,1 May 193 AD,Thebes,Pebrichis son of Pebrichis son of Herakles,Titianos,supplement (πρόσθεσις),0.0833,artabas,wheat,O.Heid. 117,"Original Text:
 1 Παχὼ(ν) ϛ τοῦ α (ἔτους) εἰς
 2 πρόσθ(εσιν) ὀνό(ματος) Πεβρίχιο(ς) ὁμ(οίως)
 3 Ἡρακ(λήους) ὑπ(ὲρ) λημ(μάτων) λβ (ἔτους) (πυροῦ ἀρτάβης) δωδέκ(ατον).
@@ -154,7 +154,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000010,2 May-28 Aug 193 AD,Thebes,Tkroris daughter of Pebrichis,Pamonthes and partners,burial tax (τέλος ταφῆς),,,,O.Heid. 118,https://papyri.info/ddbdp/o.heid;;118,"Original Text:
+ATD-000010,2 May-28 Aug 193 AD,Thebes,Tkroris daughter of Pebrichis,Pamonthes and partners,burial tax (τέλος ταφῆς),,,,O.Heid. 118,"Original Text:
 1 Παμών̣θ̣(ης) κ̣α̣ὶ μ(έτοχοι) τ̣ε̣λ̣(ῶναι)
 2 θησα(υροῦ) ἱερῶ(ν) Τκρῶρι Πε
 3 βρίχι(ος). ἔσχ̣ομ(εν) παρ̣α̣` σο̣(ῦ)
@@ -175,7 +175,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000011,17 Jun 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,"watchtowers, guards and others (σκόπελοι, φύλακες, ἄλλα)",7.2857,drachmas,money,O.Heid. 133,https://papyri.info/ddbdp/o.heid;;133,"Original Text:
+ATD-000011,17 Jun 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,"watchtowers, guards and others (σκόπελοι, φύλακες, ἄλλα)",7.2857,drachmas,money,O.Heid. 133,"Original Text:
 1 Ψανσνῶς καὶ Κασιανὸς
 2 πράκ(τορες) ἀργ(υρικῶν) Μεχφρήους Ὥρου
 3 Μεχφρήους. ἔσχ(ομεν) ὑπ(ὲρ) σκοπ(έλων) καὶ φυλ(άκων) καὶ
@@ -196,7 +196,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000012,21 Jul 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,dike tax; bath tax (χωματικόν; βαλανευτικόν),2,drachmas,money,O.Heid. 134,https://papyri.info/ddbdp/o.heid;;134,"Original Text:
+ATD-000012,21 Jul 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,dike tax; bath tax (χωματικόν; βαλανευτικόν),2,drachmas,money,O.Heid. 134,"Original Text:
 1 Ψανσνῶς καὶ Κασιανὸς πράκ(τορες)
 2 ἀργυ(ρικῶν) Μεχφρης Ὥρου Μεχφρ(ήους).
 3 ἔσχ(ομεν) ὑπ(ὲρ) χω(ματικοῦ) καὶ βαλ(ανευτικοῦ) κα (ἔτους) ῥυπ(αρὰς) δρα̣χ̣(μὰς) δύο
@@ -231,7 +231,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000013,21 Jul 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,double charges; watchtowers; guards (διπλᾶ; σκόπελοι; φύλακες),5.5714,drachmas,money,O.Heid. 134,https://papyri.info/ddbdp/o.heid;;134,"Original Text:
+ATD-000013,21 Jul 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,double charges; watchtowers; guards (διπλᾶ; σκόπελοι; φύλακες),5.5714,drachmas,money,O.Heid. 134,"Original Text:
 1 Ψανσνῶς καὶ Κασιανὸς πράκ(τορες)
 2 ἀργυ(ρικῶν) Μεχφρης Ὥρου Μεχφρ(ήους).
 3 ἔσχ(ομεν) ὑπ(ὲρ) χω(ματικοῦ) καὶ βαλ(ανευτικοῦ) κα (ἔτους) ῥυπ(αρὰς) δρα̣χ̣(μὰς) δύο
@@ -266,7 +266,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000014,21 Sep 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,,4,drachmas,money,O.Heid. 134,https://papyri.info/ddbdp/o.heid;;134,"Original Text:
+ATD-000014,21 Sep 137 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,,4,drachmas,money,O.Heid. 134,"Original Text:
 1 Ψανσνῶς καὶ Κασιανὸς πράκ(τορες)
 2 ἀργυ(ρικῶν) Μεχφρης Ὥρου Μεχφρ(ήους).
 3 ἔσχ(ομεν) ὑπ(ὲρ) χω(ματικοῦ) καὶ βαλ(ανευτικοῦ) κα (ἔτους) ῥυπ(αρὰς) δρα̣χ̣(μὰς) δύο
@@ -301,7 +301,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000015,24 Aug 137 AD,Thebes,Mechphres son of Horos,Pamonthes and partners,bath tax (βαλανευτικόν),,,,O.Heid. 135,https://papyri.info/ddbdp/o.heid;;135,"Original Text:
+ATD-000015,24 Aug 137 AD,Thebes,Mechphres son of Horos,Pamonthes and partners,bath tax (βαλανευτικόν),,,,O.Heid. 135,"Original Text:
 1 Π̣α̣μ̣ώ̣ν̣θ̣ης καὶ μ(έτοχοι) ἐπιτ(ηρηταὶ) τέλο(υς)
 2 θησ(αυροῦ) ἱ̣ερῶ(ν) Μεχφρης̣ ὁ̣μ(οίως) Ὥρου χα(ίρειν). ἔ̣σ̣χ̣(ομεν)
 3 τὸ β̣α̣λ̣(ανευτικὸν) [το]ῦ̣ κα̣ (ἔτους) Ἁ̣δ̣ρ̣ιανοῦ Καίσαρος
@@ -318,7 +318,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000016,1 Apr 138 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,,7,drachmas,money,O.Heid. 136,https://papyri.info/ddbdp/o.heid;;136,"Original Text:
+ATD-000016,1 Apr 138 AD,Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,,7,drachmas,money,O.Heid. 136,"Original Text:
 1 Ψανσνῶς [καὶ Κασιανὸς πράκ(τορες)]
 2 ἀ̣ρ̣γ̣(υρικῶν) Με̣χ̣[φρηους Ὥρου]
 3 Μεχφρήο(υς). ἔσχ(ομεν) ὑ[π(ὲρ)] [...]
@@ -341,7 +341,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000017,29 Sep 138 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Paniskos and partners,levy (μερισμός),4,drachmas,money,O.Heid. 137,https://papyri.info/ddbdp/o.heid;;137,"Original Text:
+ATD-000017,29 Sep 138 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Paniskos and partners,levy (μερισμός),4,drachmas,money,O.Heid. 137,"Original Text:
 1 Π̣ανίσκ(ος) κ̣α̣ὶ̣ μ̣(έτοχοι) ἀπα̣ι̣τ̣(ηταὶ) [...] α̣ (ἔτους) ὀνόμ(ματος)
 2 Μεχφρης [Ὥρου] Μεχφρ̣ή̣ο̣υ̣ς̣ ἔσχ(ομεν) ὑ̣π̣(ὲρ) τ̣ο̣ῦ̣ [αὐτο]ῦ̣
 3 με̣ρ̣ι̣σμ̣(οῦ) ῥ̣υ̣π̣(αρὰς) δ̣ρ̣α̣χ̣(μὰς) τ̣έ̣σ̣σ̣α̣ρ̣α̣ς̣, (γίνονται) (δραχμαὶ) δ. (ἔτους) β
@@ -356,7 +356,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000018,15 Feb 136 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,poll tax and [...] (λαογραφία),6,drachmas,money,O.Heid. 138,https://papyri.info/ddbdp/o.heid;;138,"Original Text:
+ATD-000018,15 Feb 136 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Psansnos; Kasianos,poll tax and [...] (λαογραφία),6,drachmas,money,O.Heid. 138,"Original Text:
 1 Ψαν̣[σνῶς καὶ Κασιανὸς πράκ(τορες) ἀργ(υρικῶν)]
 2 Μεχφ[ρης Ὥρου Μεχφρήους.]
 3 ἔσχ(ομεν) ὑπ(ὲρ) λ̣αο(γραφίας) καὶ [... (ἔτους) ῥυπ(αρὰς) δραχ(μὰς)]
@@ -377,7 +377,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000019,28 Oct 138 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Phansnos; Kasianos,"watchtowers and others (σκόπελοι, ἄλλα)",1.5714,drachmas,money,O.Heid. 139,https://papyri.info/ddbdp/o.heid;;139,"Original Text:
+ATD-000019,28 Oct 138 AD (?),Thebes,Mechphres son of Horos son of Mechphres,Phansnos; Kasianos,"watchtowers and others (σκόπελοι, ἄλλα)",1.5714,drachmas,money,O.Heid. 139,"Original Text:
 1 Φανσνῶς καὶ Κασιανὸς πράκ(τορες) ἀργ(υρικῶν)
 2 Μεχφ[ρ]ης Ὥρου Μεχφρήους. ἔσχ(ομεν) ὑπ(ὲρ)
 3 σκ̣ο̣π(έλων) κ̣α̣ὶ̣ ἄ̣λ̣(λων) α (ἔτους) ῥυπ(αρὰν) (δραχμὴν) μίαν̣ (τετρώβολον), (γίνεται) (δραχμὴ) α (τετρώβολον). [(ἔτους) β]
@@ -396,7 +396,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000020,14 Feb 139 AD,Thebes,Mekphres son of Horos,Horos; Asklas,poll tax; bath tax (λαογραφία; βαλανευτικόν),4,drachmas,money,O.Heid. 140,https://papyri.info/ddbdp/o.heid;;140,"Original Text:
+ATD-000020,14 Feb 139 AD,Thebes,Mekphres son of Horos,Horos; Asklas,poll tax; bath tax (λαογραφία; βαλανευτικόν),4,drachmas,money,O.Heid. 140,"Original Text:
 1 Ὧρος καὶ Ἀσκ(λᾶς) πράκ(τορες) ἀργ(υρικῶν)
 2 Μεκφρης Ὥρου. ἔσχο(μεν) ὑπ(ὲρ) λα⟨ο⟩γ(ραφίας)
 3 καὶ βαλ(ανευτικοῦ) β (ἔτους) Ἀγ(ορῶν) β ῥυπ(αρὰς) δραχ(μὰς) τέσσαρα(ς),
@@ -415,7 +415,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000021,10 Aug 139 AD,Thebes,Mekphris son of Horos son of Mekphris,Horos,dike tax; bath tax (χωματικόν; βαλανευτικόν),4,drachmas,money,O.Heid. 141,https://papyri.info/ddbdp/o.heid;;141,"Original Text:
+ATD-000021,10 Aug 139 AD,Thebes,Mekphris son of Horos son of Mekphris,Horos,dike tax; bath tax (χωματικόν; βαλανευτικόν),4,drachmas,money,O.Heid. 141,"Original Text:
 1 Ὧρος πράκ(τωρ) ἀργυ(ρικῶν) Ἀγ(ορῶν) β
 2 Μεκφρι̣ς ωρο υ μεκφ̣ρις.
 3 ἔσχομ(εν) ὑπ(ὲρ) χωμ(ατικοῦ) καὶ βαλ(ανευτικοῦ) β (ἔτους)
@@ -432,7 +432,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000022,138-139 AD,Thebes,Mekphres son of Horos son of Mekphres,Horos; Asklas,double charges (διπλᾶ),4,drachmas,money,O.Heid. 142,https://papyri.info/ddbdp/o.heid;;142,"Original Text:
+ATD-000022,138-139 AD,Thebes,Mekphres son of Horos son of Mekphres,Horos; Asklas,double charges (διπλᾶ),4,drachmas,money,O.Heid. 142,"Original Text:
 1 Ὧρος καὶ Ἀσκλᾶς πράκ(τορες) ἀργ(υρικῶν)
 2 Ἀγ(ορῶν) β Μεκφρης Ὥρου Μεκφρήο(υς).
 3 ἔσχομ(εν) ὑπ(ὲρ) διπλ(ῶν) β̣ (ἔτους?) (δραχμὰς?) δ̣, (γίνεται?) (δραχμαὶ) δ.
@@ -451,7 +451,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000023,31 Aug 139 AD,Thebes,Mekphres son of Horos son of Mekphres,Horos; Asklas,dike tax; bath tax (χωματικόν; βαλανευτικόν),3.5714,drachmas,money,O.Heid. 143,https://papyri.info/ddbdp/o.heid;;143,"Original Text:
+ATD-000023,31 Aug 139 AD,Thebes,Mekphres son of Horos son of Mekphres,Horos; Asklas,dike tax; bath tax (χωματικόν; βαλανευτικόν),3.5714,drachmas,money,O.Heid. 143,"Original Text:
 1 Ὧρος καὶ Ἀσκλᾶς πρ[άκ(τορες) ἀργ(υρικῶν)]
 2 Ἀγ(ορῶν) β̅ Μεκφρης Ὥρου Μεκφρή(ους). ἔσχο(μεν)
 3 ὑπ(ὲρ) χωμ(ατικοῦ) καὶ βαλ(ανευτικοῦ) β (ἔτους) ῥυπ(αρὰς) (δραχμὰς) γ̣ (τετρώβολον). (ἔτους) ⟦β⟧ γ
@@ -468,7 +468,7 @@ English translation:
 Original text: Duke Databank of Documentary Papyri (DDbDP); metadata: Heidelberger
 Gesamtverzeichnis der griechischen Papyrusurkunden Ägyptens (HGV); via papyri.info
 (github.com/papyri/idp.data), licensed CC BY 3.0."
-ATD-000024,31 Aug 139 AD,Thebes,Mekchres son of Pete[...],Asklas; Horos,,0.5714,drachmas,money,O.Heid. 144,https://papyri.info/ddbdp/o.heid;;144,"Original Text:
+ATD-000024,31 Aug 139 AD,Thebes,Mekchres son of Pete[...],Asklas; Horos,,0.5714,drachmas,money,O.Heid. 144,"Original Text:
 1 Ἀσκλᾶς καὶ Ὧρος
 2 πράκτορες ἀργυρι̣κ(ῶν) Μεκχρῇ
 3 Πετ̣ε̣. ἔσχομ(εν) ὑπ̣(ὲρ) ......( )
