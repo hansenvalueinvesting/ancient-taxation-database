@@ -74,5 +74,21 @@ tax receipt broken into individual transactions, one row per payment. Starting w
   Open for Hansen: several receipts (O.Petr. Mus. 307-310, O.Strasb. 2 819, 822, P.Hoogendijk 14,
   P.Bagnall 60) only add up with 6 obols to the drachma (converted at 7 per the handoff); O.Strasb.
   citations link wrongly (DDbDP series o.stras); many other series differ between citation and DDbDP id.
+- Oct 2026: Roman Egypt (30 BC-AD 284) done (Hansen: "keep going till you finish up with the entire
+  region/time period"): candidates = HGV records dated (start) 30 BC-AD 284 with terms Quittung+Steuer, or
+  titles with "Quittung" except Pacht/Miet/Penthemeros/Lohn/Ration/Darlehen/Kauf/Brief/Liste/Arbeit/Fracht/
+  Transport/Saatgut: 1,915 total, 1,852 read (240 Thebes + 1,612), 18 without DDbDP text. Stubs (TM 9765a etc.)
+  read from the base DDbDP text. ATD-000279 - 003278. Excluded: 85 fragments, 23 rent, 14 price, 12 labour,
+  99 other. Agent outputs (flags per row) only in the scratch folder.
+  Choices made in this pass (Hansen may revisit): tax left blank when the receipt does not name it (granary
+  receipts, "public dues", "tax (τέλος)"); surcharges (προσδιαγραφόμενα), exchange fee (κόλλυβος), receipt fee
+  (συμβολικόν) = own rows, tax `other` (some batches kept them only in flags); gross sum used when a receipt
+  also gives the net ("καθαραί"); sums in copper drachmas/talents and Roman money left blank (amount), as a
+  new currency system needs Hansen's confirmation; "dirty" drachmas = drachmas; sums written with more than 7
+  obols (e.g. 8 dr. 8 ob.) converted as written; "X son of Y, mother Z" where the mother is named;
+  editor-restored sums used (flagged); a payment dated differently from the document gets its own date.
+  More receipts only add up at 6 obols to the drachma (APF 63 307, BGU 20 2852, P.Hamb. 3 209, P.Köln 9 377,
+  SB 1 1669, SB 12 10778, SB 28 17237, Coptos grain-price receipts O.Petr. Mus. 281-285; converted at 7).
+  Locations: HGV origPlace mapped to ancient Latinized names (scratch bin/place.py).
 - Deferred (Hansen, Oct 2026): loading data on demand as the CSV grows (options discussed: per-node
   split files built by an Action; SQLite via sql.js-httpvfs). The site loads the whole atd.csv for now.
