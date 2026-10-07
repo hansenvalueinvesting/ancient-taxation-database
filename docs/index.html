@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ancient Taxation Database</title>
+  <meta name="description" content="Open record of individual tax payments in the ancient world.">
+</head>
+<body>
+  <h1>Ancient Taxation Database</h1>
+  <p>Open record of individual tax payments in the ancient world. Created and maintained by Hansen Zheng.</p>
+
+  <p><small>This is a work in progress and may contain mistakes. Spotted a mistake or have data to share? I’d love to hear from you: <a href="mailto:hansen.zheng@outlook.com">hansen.zheng@outlook.com</a><br>
+  IDs are assigned in sequential order as payments are added to the database.</small></p>
+
+  <h2>Catalogue</h2>
+  <ul>
+    <li><a href="#all">All payments</a> <span id="cat-total"></span>
+      <ul id="cat-tree"></ul>
+    </li>
+  </ul>
+
+  <h2 id="sel-title" hidden></h2>
+  <p id="controls" hidden>
+    <label>Search <input id="f-search" type="search" placeholder="ID, date, location, person, source"></label>
+    <label>Location <select id="f-location"><option value="">All</option></select></label>
+    <label>Unit <select id="f-unit"><option value="">All</option></select></label>
+    <label>Type <select id="f-type"><option value="">All</option></select></label>
+    <label>From year <input id="f-from" type="text" size="8"></label>
+    <label>To year <input id="f-to" type="text" size="8"></label>
+    <button id="btn-reset" type="button">Reset</button>
+    <button id="btn-csv" type="button">Download CSV</button>
+  </p>
+
+  <p id="status" role="status">Loading catalogue…</p>
+
+  <table id="payments" hidden border="1" cellpadding="4" cellspacing="0">
+    <thead>
+      <tr>
+        <th data-sort="id">ID</th>
+        <th data-sort="date">Date</th>
+        <th data-sort="location">Location</th>
+        <th data-sort="payer">Payer</th>
+        <th data-sort="collector">Collector</th>
+        <th data-sort="amount">Amount</th>
+        <th data-sort="unit">Unit</th>
+        <th data-sort="type">Type</th>
+        <th data-sort="source">Source</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
