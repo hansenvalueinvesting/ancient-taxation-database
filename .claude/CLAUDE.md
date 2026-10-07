@@ -33,3 +33,5 @@ tax receipt broken into individual transactions, one row per payment. Starting w
 
 ## Status
 - Oct 2026: repo created (atd.csv headers only, README, viewer). 0 rows.
+- Deferred (Hansen, Oct 2026): loading data on demand as the CSV grows (options discussed: per-node
+  split files built by an Action; SQLite via sql.js-httpvfs). The site loads the whole atd.csv for now.
