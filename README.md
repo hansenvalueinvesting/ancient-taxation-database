@@ -15,7 +15,7 @@ Data: `atd.csv`. Viewer: `docs/` (GitHub Pages).
 | location | Place of payment; if not stated on the receipt, the document's provenance | `Thebes` |
 | payer | Name as written on the document, transliterated in that language's form (Greek names keep Greek spelling, Latin names Latin), with patronym if given | `Pamonthes son of Haryothes` |
 | collector | Name as written, as for payer; several collectors separated by `; ` | `Apollonios; Herakleides` |
-| tax | The tax or charge paid for | `bath tax (βαλανευτικόν)` |
+| tax | One category: `poll tax`, `bath tax`, `dike tax`, `guard tax`, `land tax`, `crop tax`, `trade tax`, `customs`, `sales tax`, `burial tax`, `levy`, `animal tax`, `other`; `mixed` when one sum pays several taxes; blank if lost | `bath tax` |
 | amount | Purely numeric | `8.2857` |
 | unit | Currency or measure of the amount | `drachmas` / `denarii` / `artabas` |
 | type | `money`, or the commodity paid | `money` / `wheat` / `barley` |
@@ -24,8 +24,8 @@ Data: `atd.csv`. Viewer: `docs/` (GitHub Pages).
 
 ## Conventions
 
-1. **What counts**: a tax is a payment to the government (working definition; to be refined).
-2. **One row per transaction.** A receipt with several payments becomes several rows sharing the same source. Payments in different currencies or commodities on the same receipt are separate rows.
+1. **What counts**: a tax is a payment to the government. Counted: poll, bath, dike and guard taxes, taxes on land and crops (in money or in kind), levies, trade taxes, customs and tolls, sales and burial taxes. Rent, prices for goods, fees for a service the payer chose and labour duties are not taxes.
+2. **One row per transaction.** A receipt with several payments (or sums stated separately for different taxes) becomes several rows sharing the same source; one sum paying several taxes is one row, tax `mixed`. Payments in different currencies or commodities on the same receipt are separate rows.
 3. **Money** converts only within its own currency system, into that system's main unit; never between systems.
    - Greek/Egyptian drachma system: 1 drachma = 7 obols; 1 obol = 8 chalkoi (1 drachma = 56 chalkoi). Recorded in drachmas, rounded to 4 decimals. Example: 8 dr. 2 ob. = 8.2857 drachmas.
    - Roman denarius system: recorded in denarii, not drachmas.
@@ -52,6 +52,10 @@ Data: `atd.csv`. Viewer: `docs/` (GitHub Pages).
 Roman Egyptian texts: papyri.info, Trismegistos.
 
 ## Change log
+
+**2026-10-07 (Thebes)**
+- Added ATD-000025 - 000278 (254 payments): 201 further tax receipts from Thebes (O.Heid., O.Petr. Mus., O.Strasb. 2, P.Bagnall, P.Sijp., P.Hoogendijk, P.Rein. 2, SB), 1st century BC - 3rd century AD (DDbDP/HGV via papyri.info). 14 receipts left out (12 too fragmentary, 2 rent; O.Heid. 93 has no text online).
+- Tax recorded as one standard category (English only); one sum paying several taxes = `mixed`. Applied to ATD-000001 - 000024. Dates with alternative readings span earliest to latest (ATD-000005, 000017 - 000019 corrected). Database: 278 payments.
 
 **2026-10-07 (source links)**
 - Sources on the site link to the online edition (papyri.info).

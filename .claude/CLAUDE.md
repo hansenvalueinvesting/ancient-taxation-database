@@ -34,7 +34,18 @@ tax receipt broken into individual transactions, one row per payment. Starting w
 - In-kind keeps its own unit; never converted to money.
 - Dates in BC/AD: `128 AD`, `8 Aug 128 AD`, `30 BC`.
 - Unknown or lost = blank. Never guess.
-- Tax = a payment to the government (Hansen, Oct 2026: "we can work this definition a little more").
+- Tax = a payment to the government (Hansen, Oct 2026; "keep the original definition"). Poll, bath, dike,
+  guard and burial taxes count (Hansen: "in that case these count"). Rent, prices, fees for a chosen
+  service and labour duties (penthemeros) are left out.
+- tax field (Hansen, Oct 2026: "very clear ... no Greek ... standardized into large categories"): one of
+  poll tax, bath tax, dike tax, guard tax, land tax, crop tax, trade tax, customs, sales tax, burial tax,
+  levy, animal tax, other; one sum for several taxes = `mixed` (Hansen); lost = blank. Mapping used:
+  land survey (geometria), palm groves, granary grain = land tax; "price of" dates/wine/wheat = crop tax;
+  agoranomia = sales tax; ferry = customs; weavers, menders, clothing sellers, hunting = trade tax;
+  pasture, sheep = animal tax; crown tax, canal, double charges (diploi), supplement (prosthesis),
+  arrears, pentaphylia, brick, unnamed monthly tax = other.
+- Dates from HGV; alternative dates -> span earliest to latest, uncertain -> ` (?)`; a payment dated
+  differently on the receipt gets its own converted date.
 - Names (Hansen, Oct 2026): "use whatever is on the original document": Greek documents keep Greek
   spelling (Apollonios), Latin ones Latin, etc.
 - notes: same structure as the ALD (Original Text, English translation, credit line), see README.
@@ -45,6 +56,8 @@ tax receipt broken into individual transactions, one row per payment. Starting w
   dated 30 BC-AD 284: 976 texts (Thebes 239, Elephantine 89, Memnoneia 66, Soknopaiou Nesos 61, ...);
   a wider net (titles with `Quittung`) gives ~1,540 incl. rent, rations, granary receipts.
 - Original text rendered from the EpiDoc by script (scratch folder; not in the repo).
+- Extraction: subagents (batches of ~24) read the Greek, return rows (amounts as dr/ob/ch, converted by
+  script) and a line-by-line translation (line numbers checked by script).
 
 ## Status
 - Oct 2026: repo created (atd.csv headers only, README, viewer). 0 rows.
@@ -55,5 +68,11 @@ tax receipt broken into individual transactions, one row per payment. Starting w
   (`Feb-Apr 190 AD (?)`, `138-139 AD`), several taxes for one sum (one row, `dike tax; bath tax (χωματικόν;
   βαλανευτικόν)`; separately itemised sums = separate rows), dirty drachmas (as `drachmas`), "X and
   partners" collectors, in-kind fractions (1/12 artaba = 0.0833), O.Heid. 139 sum mismatch (text figure used).
+- Oct 2026: Thebes done: all 240 HGV tax receipts from Thebes (30 BC-AD 284 by start date) reviewed;
+  ATD-000001 - 000278. Left out: O.Heid. 103, 114, 120, 206, 207, 214, 217, 470, 500, 54, 99, 160,
+  O.Petr. Mus. 315, 330 (fragments), O.Heid. 219, 251 (rent), O.Heid. 93 (no text).
+  Open for Hansen: several receipts (O.Petr. Mus. 307-310, O.Strasb. 2 819, 822, P.Hoogendijk 14,
+  P.Bagnall 60) only add up with 6 obols to the drachma (converted at 7 per the handoff); O.Strasb.
+  citations link wrongly (DDbDP series o.stras); many other series differ between citation and DDbDP id.
 - Deferred (Hansen, Oct 2026): loading data on demand as the CSV grows (options discussed: per-node
   split files built by an Action; SQLite via sql.js-httpvfs). The site loads the whole atd.csv for now.
