@@ -13,29 +13,30 @@
   <p><small>This is a work in progress and may contain mistakes. Spotted a mistake or have data to share? I’d love to hear from you: <a href="mailto:hansen.zheng@outlook.com">hansen.zheng@outlook.com</a><br>
   IDs are assigned in sequential order as data are added. </small></p>
 
-  <h2>Catalogue</h2>
-  <ul>
-    <li><a href="#all">All payments</a> <span id="cat-total"></span>
-      <ul id="cat-tree"></ul>
-    </li>
-  </ul>
-
-  <h2 id="sel-title" hidden></h2>
-  <p id="controls" hidden>
-    <label>Search <input id="f-search" type="search" placeholder="ID, date, location, person, tax, source"></label>
-    <label>Location <select id="f-location"><option value="">All</option></select></label>
-    <label>Tax <select id="f-tax"><option value="">All</option></select></label>
-    <label>Unit <select id="f-unit"><option value="">All</option></select></label>
-    <label>Type <select id="f-type"><option value="">All</option></select></label>
+  <h2>Filters</h2>
+  <p>
     <label>From year <input id="f-from" type="text" size="8"></label>
     <label>To year <input id="f-to" type="text" size="8"></label>
+  </p>
+  <p>
+    <label>Location <input id="f-location" list="dl-location" placeholder="Type to search, Enter to add"></label>
+    <span id="picked-location"></span>
+    <datalist id="dl-location"></datalist>
+  </p>
+  <p>
+    <label>Tax <input id="f-tax" list="dl-tax" placeholder="Type to search, Enter to add"></label>
+    <span id="picked-tax"></span>
+    <datalist id="dl-tax"></datalist>
+  </p>
+  <p>
+    <label>Search <input id="f-search" type="search" placeholder="ID, date, location, person, tax, source"></label>
     <button id="btn-reset" type="button">Reset</button>
     <button id="btn-csv" type="button">Download CSV</button>
   </p>
 
-  <p id="status" role="status">Loading catalogue…</p>
+  <p id="status" role="status">Loading…</p>
 
-  <table id="payments" hidden border="1" cellpadding="4" cellspacing="0">
+  <table id="payments" border="1" cellpadding="4" cellspacing="0">
     <thead>
       <tr>
         <th data-sort="id">ID</th>

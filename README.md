@@ -53,6 +53,9 @@ Roman Egyptian texts: papyri.info, Trismegistos.
 
 ## Change log
 
+**2026-10-07 (site)**
+- Catalogue replaced by filters: date range, location and tax (type to search, several at once), and search.
+
 **2026-10-07 (Roman Egypt)**
 - Added ATD-000279 - 003278 (3,000 payments): all remaining tax receipts of Roman Egypt, 30 BC - AD 284, in the DDbDP/HGV corpus (papyri.info): 1,612 further documents reviewed (HGV tax receipts plus receipts titled "Quittung" that are not rent, wages, loans or labour), 1,379 with tax payments. Largest places: Soknopaiou Nesos, Elephantine/Syene, Tebtunis, Thebes, Karanis, Memnonia, Philadelphia, Theadelphia. Left out: 85 too fragmentary, 23 rent, 14 prices, 12 labour (dike work), 99 not tax payments (army supplies, private receipts, transport, loans); 18 have no text online. Database: 3,278 payments.
 - Locations: ancient names, Latinized as in the ALD (Tebtunis, Bacchias, Coptos, Oxyrhynchus), "Arsinoite nome" where only the nome is known, "X or Y" where the provenance is uncertain between two places.

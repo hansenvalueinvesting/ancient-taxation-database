@@ -1,4 +1,4 @@
-// The Ancient Taxation Database — frontend for index.html (catalogue and payment lists) and payment.html (one payment).
+// The Ancient Taxation Database — frontend for index.html (filters and payment list) and payment.html (one payment).
 // Reads atd.csv from the repository (CSV_URL in config.js).
 
 const { CSV_URL } = window.ATD_CONFIG;
@@ -21,7 +21,7 @@ const fmtSource = (p) => {
 const cellHtml = (p, c) => (c === 'source' ? fmtSource(p) : esc(p[c]).replace(/\n/g, '<br>'));
 
 const $ = (id) => document.getElementById(id);
-const state = { all: [], rows: [], sortKey: 'id', sortDir: 1, shown: [] };
+const state = { all: [], sortKey: 'id', sortDir: 1, shown: [], picked: { location: new Set(), tax: new Set() } };
 
 // ---------- data ----------
 
@@ -50,6 +50,7 @@ async function fetchPayments() {
   return body.map((r) => {
     const p = Object.fromEntries(head.map((h, i) => [h, r[i] ?? '']));
     p.year = yearOf(p.date);
+    p.yearEnd = yearEndOf(p.date);
     return p;
   });
 }
@@ -62,6 +63,13 @@ function yearOf(date) {
   const m = String(date).replace(/ \(\?\)$/, '').match(/(\d+)(?: (BC|AD))?(?:-.*?\d+)? (BC|AD)$/);
   if (!m) return null;
   return (m[2] || m[3]) === 'BC' ? -Number(m[1]) : Number(m[1]);
+}
+
+// Date field → last year it may fall in: '138-139 AD' → 139, '30 BC-14 AD' → 14, '128 AD' → 128.
+function yearEndOf(date) {
+  const m = String(date).replace(/ \(\?\)$/, '').match(/(\d+) (BC|AD)$/);
+  if (!m) return null;
+  return m[2] === 'BC' ? -Number(m[1]) : Number(m[1]);
 }
 
 // Date field → sortable value: year, then month, then day of the range's start.
@@ -86,116 +94,86 @@ function parseYear(s) {
 
 const fmtYear = (n) => (n < 0 ? `${-n} BC` : `${n} AD`);
 
-// ---------- catalogue ----------
+// ---------- multi-select filters (type to search, pick several) ----------
 
-const ordinal = (n) => n + (n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th');
-const centuryLabel = (c) => (c < 0 ? `${ordinal(-c)} century BC` : `${ordinal(c)} century AD`);
-// Year → century: 1-100 AD = 1, 100-1 BC = -1.
-const centuryOf = (y) => (y == null ? null : y > 0 ? Math.ceil(y / 100) : -Math.ceil(-y / 100));
-const q = encodeURIComponent;
+// Columns with a multi-select filter. A blank value is offered as BLANK[col].
+const MULTI = ['location', 'tax'];
+const BLANK = { location: '(location unknown)', tax: '(tax not named)' };
+const shownValue = (col, v) => (v === '' ? BLANK[col] : v);
 
-// Selection (from the URL hash) → title and row test.
-// '#all'; '#loc=Thebes' (empty = location unknown); '&c=2' adds a century (2 = 101-200 AD,
-// -1 = 100-1 BC; empty = date unknown).
-function selection() {
-  const h = location.hash.slice(1);
-  if (!h) return null;
-  if (h === 'all') return { title: 'All payments', test: () => true };
-  const prm = new URLSearchParams(h);
-  if (!prm.has('loc')) return null;
-  const loc = prm.get('loc');
-  let title = loc || 'Location unknown';
-  let test = (p) => p.location === loc;
-  if (prm.has('c')) {
-    const c = prm.get('c') === '' ? null : Number(prm.get('c'));
-    title += c == null ? ', date unknown' : `, ${centuryLabel(c)}`;
-    const byLoc = test;
-    test = (p) => byLoc(p) && centuryOf(p.year) === c;
-  }
-  return { title, test };
-}
-
-const node = (href, label, n) => `<a href="#${href}">${esc(label)}</a> (${n.toLocaleString()})`;
-
-// Catalogue: one tree, location > century; earliest first at each level, unknowns last.
-function renderCatalogue() {
-  $('cat-total').textContent = `(${state.all.length.toLocaleString()})`;
-  const locs = new Map();
-  state.all.forEach((p) => {
-    if (!locs.has(p.location)) locs.set(p.location, { n: 0, first: Infinity, cents: new Map() });
-    const l = locs.get(p.location), c = centuryOf(p.year);
-    l.n++;
-    l.first = Math.min(l.first, p.year ?? Infinity);
-    l.cents.set(c, (l.cents.get(c) || 0) + 1);
+// Fill each filter's suggestion list with the values not yet picked, with their number of payments.
+function fillOptions() {
+  MULTI.forEach((col) => {
+    const counts = new Map();
+    state.all.forEach((p) => counts.set(p[col], (counts.get(p[col]) || 0) + 1));
+    $(`dl-${col}`).innerHTML = [...counts].filter(([v]) => !state.picked[col].has(v))
+      .sort((a, b) => shownValue(col, a[0]).localeCompare(shownValue(col, b[0])))
+      .map(([v, n]) => `<option value="${esc(shownValue(col, v))}">${n.toLocaleString()} payments</option>`).join('');
   });
-  const order = (a, b) => (a[0] === '') - (b[0] === '') || a[1].first - b[1].first || a[0].localeCompare(b[0]);
-  $('cat-tree').innerHTML = [...locs].sort(order).map(([loc, l]) => {
-    const cents = [...l.cents].sort((a, b) => (a[0] ?? Infinity) - (b[0] ?? Infinity)).map(([c, n]) => `<li>${
-      node(`loc=${q(loc)}&c=${c ?? ''}`, c == null ? 'Date unknown' : centuryLabel(c), n)}</li>`).join('');
-    return `<li><details><summary>${node(`loc=${q(loc)}`, loc || 'Location unknown', l.n)}</summary><ul>${cents}</ul></details></li>`;
-  }).join('');
 }
 
-async function load() {
-  try {
-    state.all = await fetchPayments();
-  } catch (err) {
-    return setStatus(`Could not load data. ${err.message}`);
-  }
-  renderCatalogue();
-  showSelection();
+// Picked values, shown as buttons; clicking one removes it.
+function showPicked() {
+  MULTI.forEach((col) => {
+    $(`picked-${col}`).innerHTML = [...state.picked[col]].map((v) =>
+      `<button type="button" data-col="${col}" data-value="${esc(v)}" title="Remove">${esc(shownValue(col, v))} ×</button>`).join(' ');
+  });
 }
 
-// Show the payments of the selected catalogue node.
-function showSelection() {
-  const sel = selection();
-  ['sel-title', 'controls', 'payments'].forEach((id) => { $(id).hidden = !sel; });
-  if (!sel) { state.rows = []; return setStatus(state.all.length ? 'Choose a category above.' : 'No payments recorded yet.'); }
-  $('sel-title').textContent = sel.title;
-  state.rows = state.all.filter(sel.test);
-  ['f-location', 'f-tax', 'f-unit', 'f-type'].forEach((id) => { $(id).length = 1; });
-  ['f-search', 'f-from', 'f-to'].forEach((id) => { $(id).value = ''; });
-  fillSelect('f-location', state.rows.map((p) => p.location));
-  fillSelect('f-tax', state.rows.map((p) => p.tax));
-  fillSelect('f-unit', state.rows.map((p) => p.unit));
-  fillSelect('f-type', state.rows.map((p) => p.type));
-  setYearPlaceholders();
-  render();
+// Typed text → the value it names (exact, else the only or first value containing it); null if none.
+function matchValue(col, text) {
+  const t = text.trim().toLowerCase();
+  if (!t) return null;
+  const vals = [...new Set(state.all.map((p) => p[col]))].filter((v) => !state.picked[col].has(v));
+  return vals.find((v) => shownValue(col, v).toLowerCase() === t)
+    ?? vals.filter((v) => shownValue(col, v).toLowerCase().includes(t)).sort()[0] ?? null;
+}
+
+function pick(col, v) {
+  state.picked[col].add(v);
+  $(`f-${col}`).value = '';
+  update();
+}
+
+// ---------- filters in the URL (shareable links) ----------
+// #from=100 AD&to=200 AD&location=Thebes|Karanis&tax=poll tax&q=Pebrichis
+
+function writeHash() {
+  const prm = new URLSearchParams();
+  if ($('f-from').value.trim()) prm.set('from', $('f-from').value.trim());
+  if ($('f-to').value.trim()) prm.set('to', $('f-to').value.trim());
+  MULTI.forEach((col) => { if (state.picked[col].size) prm.set(col, [...state.picked[col]].join('|')); });
+  if ($('f-search').value.trim()) prm.set('q', $('f-search').value.trim());
+  const h = prm.toString();
+  history.replaceState(null, '', h ? `#${h}` : location.pathname + location.search);
+}
+
+function readHash() {
+  const prm = new URLSearchParams(location.hash.slice(1));
+  $('f-from').value = prm.get('from') || '';
+  $('f-to').value = prm.get('to') || '';
+  $('f-search').value = prm.get('q') || '';
+  MULTI.forEach((col) => { state.picked[col] = new Set(prm.has(col) ? prm.get(col).split('|') : []); });
 }
 
 // ---------- formatting ----------
 
 const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-// Year filter hints: earliest and latest year on record.
-function setYearPlaceholders() {
-  const ys = state.rows.map((p) => p.year).filter((y) => y != null);
-  $('f-from').placeholder = ys.length ? fmtYear(Math.min(...ys)) : '';
-  $('f-to').placeholder = ys.length ? fmtYear(Math.max(...ys)) : '';
-}
-
 function setStatus(msg) {
   $('status').textContent = msg;
 }
 
-function fillSelect(id, values) {
-  const sel = $(id);
-  [...new Set(values.filter((v) => v !== ''))].sort().forEach((v) => sel.add(new Option(v, v)));
-}
-
 // ---------- filtering & table ----------
 
+// A payment matches when it is in any picked value of each multi-select filter, its date range
+// overlaps the year range, and it contains the search text.
 function filtered() {
   const s = $('f-search').value.trim().toLowerCase();
-  const loc = $('f-location').value, tax = $('f-tax').value, unit = $('f-unit').value, type = $('f-type').value;
   const from = parseYear($('f-from').value), to = parseYear($('f-to').value);
-
-  return state.rows.filter((p) => {
-    if (loc && p.location !== loc) return false;
-    if (tax && p.tax !== tax) return false;
-    if (unit && p.unit !== unit) return false;
-    if (type && p.type !== type) return false;
-    if (from != null && (p.year == null || p.year < from)) return false;
+  return state.all.filter((p) => {
+    if (MULTI.some((col) => state.picked[col].size && !state.picked[col].has(p[col]))) return false;
+    if (from != null && (p.yearEnd == null || p.yearEnd < from)) return false;
     if (to != null && (p.year == null || p.year > to)) return false;
     if (s && !LIST_COLS.map((c) => p[c]).join(' ').toLowerCase().includes(s)) return false;
     return true;
@@ -227,8 +205,29 @@ function render() {
   });
   const bad = ['f-from', 'f-to'].filter((id) => Number.isNaN(parseYear($(id).value)));
   setStatus(bad.length
-    ? 'Year filter not understood: enter a year like 100 BC or 57 AD.'
-    : `${state.shown.length.toLocaleString()} of ${state.rows.length.toLocaleString()} payments`);
+    ? 'Year not understood: enter a year like 100 BC or 57 AD.'
+    : `${state.shown.length.toLocaleString()} of ${state.all.length.toLocaleString()} payments`);
+}
+
+// Filters changed: refresh picked values, suggestions, table and URL.
+function update() {
+  showPicked();
+  fillOptions();
+  render();
+  writeHash();
+}
+
+async function load() {
+  try {
+    state.all = await fetchPayments();
+  } catch (err) {
+    return setStatus(`Could not load data. ${err.message}`);
+  }
+  const ys = state.all.map((p) => p.year).filter((y) => y != null);
+  $('f-from').placeholder = fmtYear(Math.min(...ys));
+  $('f-to').placeholder = fmtYear(Math.max(...ys));
+  readHash();
+  update();
 }
 
 // ---------- CSV export ----------
@@ -268,14 +267,33 @@ async function loadPayment() {
 if ($('payment')) {
   loadPayment();
 } else {
-  const FILTERS = ['f-search', 'f-location', 'f-tax', 'f-unit', 'f-type', 'f-from', 'f-to'];
-  FILTERS.forEach((id) => $(id).addEventListener('input', render));
+  MULTI.forEach((col) => {
+    const input = $(`f-${col}`);
+    // A value chosen from the suggestion list is picked at once; Enter picks the best match of the typed text.
+    input.addEventListener('input', () => {
+      const v = matchValue(col, input.value);
+      if (v != null && shownValue(col, v).toLowerCase() === input.value.trim().toLowerCase()) pick(col, v);
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      const v = matchValue(col, input.value);
+      if (v != null) pick(col, v);
+    });
+    $(`picked-${col}`).addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      state.picked[col].delete(b.dataset.value);
+      update();
+    });
+  });
+  ['f-from', 'f-to', 'f-search'].forEach((id) => $(id).addEventListener('input', () => { render(); writeHash(); }));
   $('btn-reset').addEventListener('click', () => {
-    FILTERS.forEach((id) => { $(id).value = ''; });
-    render();
+    ['f-from', 'f-to', 'f-search', ...MULTI.map((c) => `f-${c}`)].forEach((id) => { $(id).value = ''; });
+    MULTI.forEach((col) => state.picked[col].clear());
+    update();
   });
   $('btn-csv').addEventListener('click', downloadCsv);
-  window.addEventListener('hashchange', showSelection);
   document.querySelectorAll('th[data-sort]').forEach((th) => th.addEventListener('click', () => {
     state.sortDir = state.sortKey === th.dataset.sort ? -state.sortDir : 1;
     state.sortKey = th.dataset.sort;
