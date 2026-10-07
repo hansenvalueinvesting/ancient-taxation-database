@@ -15,8 +15,9 @@ tax receipt broken into individual transactions, one row per payment. Starting w
 
 ## Architecture (Hansen, Oct 2026)
 - Data: `atd.csv` in the repo (no Supabase or other backend). Columns in this exact order:
-  id, date, location, payer, collector, tax, amount, unit, type, source, notes (tax and notes added by
-  Hansen, Oct 2026). No source_url column (Hansen: "don't add a column, just hyperlink it"). Field docs + conventions in `README.md`.
+  id, date, location, tax, payer, collector, type, amount, unit, source, notes (tax and notes added by
+  Hansen, Oct 2026; order changed by Hansen: tax before payer, type before amount). type: `currency`
+  (Hansen: renamed from "money") or the commodity. No source_url column (Hansen: "don't add a column, just hyperlink it"). Field docs + conventions in `README.md`.
 - Viewer: `docs/` (GitHub Pages), same style as the ALD site (plain HTML + `docs/app.js`, no CSS).
   Reads `atd.csv` from the main branch (`CSV_URL` in `docs/config.js`). Navigation (Hansen, Oct 2026:
   "change our entire navigational approach ... a filter ... type to search and select ... multiple filters

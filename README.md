@@ -13,12 +13,12 @@ Data: `atd.csv`. Viewer: `docs/` (GitHub Pages).
 | id | `ATD-` + 6-digit zero-padded sequential number; never reused | `ATD-000001` |
 | date | BC/AD date, to the precision the receipt gives | `128 AD` / `8 Aug 128 AD` / `30 BC` |
 | location | Place of payment; if not stated on the receipt, the document's provenance | `Thebes` |
+| tax | One category: `poll tax`, `bath tax`, `dike tax`, `guard tax`, `land tax`, `crop tax`, `trade tax`, `customs`, `sales tax`, `burial tax`, `levy`, `animal tax`, `other`; `mixed` when one sum pays several taxes; blank if lost | `bath tax` |
 | payer | Name as written on the document, transliterated in that language's form (Greek names keep Greek spelling, Latin names Latin), with patronym if given | `Pamonthes son of Haryothes` |
 | collector | Name as written, as for payer; several collectors separated by `; ` | `Apollonios; Herakleides` |
-| tax | One category: `poll tax`, `bath tax`, `dike tax`, `guard tax`, `land tax`, `crop tax`, `trade tax`, `customs`, `sales tax`, `burial tax`, `levy`, `animal tax`, `other`; `mixed` when one sum pays several taxes; blank if lost | `bath tax` |
+| type | `currency`, or the commodity paid | `currency` / `wheat` / `barley` |
 | amount | Purely numeric | `8.2857` |
 | unit | Currency or measure of the amount | `drachmas` / `denarii` / `artabas` |
-| type | `money`, or the commodity paid | `money` / `wheat` / `barley` |
 | source | Standard publication reference of the document; the site links it to the online edition (papyri: papyri.info) | `O.Lips. 123` |
 | notes | Original text of the document and an English translation, then the credit line (see below) | |
 
@@ -52,6 +52,9 @@ Data: `atd.csv`. Viewer: `docs/` (GitHub Pages).
 Roman Egyptian texts: papyri.info, Trismegistos.
 
 ## Change log
+
+**2026-10-07 (columns)**
+- Column order now id, date, location, tax, payer, collector, type, amount, unit, source, notes (CSV and site); type `money` renamed `currency`.
 
 **2026-10-07 (site)**
 - Catalogue replaced by filters: date range, location and tax (type to search, several at once), and search.
