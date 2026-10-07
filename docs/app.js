@@ -206,7 +206,7 @@ function render() {
   const bad = ['f-from', 'f-to'].filter((id) => Number.isNaN(parseYear($(id).value)));
   setStatus(bad.length
     ? 'Year not understood: enter a year like 100 BC or 57 AD.'
-    : `${state.shown.length.toLocaleString()} of ${state.all.length.toLocaleString()} payments`);
+    : `${state.shown.length.toLocaleString()} of ${state.all.length.toLocaleString()} tax payments`);
 }
 
 // Filters changed: refresh picked values, suggestions, table and URL.
